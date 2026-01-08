@@ -9,7 +9,6 @@ To start, you will create a dictionary for your encoded letters.
 </div>
 </div>
 
---- task ---
 
 If you have a Raspberry Pi account, you can click **Save** to save a copy of the starter code to your library.
 
