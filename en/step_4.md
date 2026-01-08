@@ -1,156 +1,137 @@
-## Create a menu 
+## Encode a message
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now you are going to create a menu system for your user to make choices about what they would like to do. 
+In this step, you will create a function that can take your text, flip it and reverse it with your atbash cypher list, and return it as an encoded message. 
 </div>
 <div>
-![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
+![The output of the code created in this step. An encoded version of a secret message is displayed.](images/test-encoded.PNG){:width="300px"}
 </div>
 </div>
 
 --- task ---
-
-**Find** the comment in your code that says `# Create a text-based menu system` and begin by defining a function called `menu()`:
+ 
+**Comment out** the print statement used for testing on line 17 by placing a hashtag at the beginning of the line:
 
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py - create_code()
 line_numbers: true
-line_number_start: 41
-line_highlights: 42
+line_number_start: 14
+line_highlights: 17
 ---
-# Create a text-based menu system
-def menu():
+    for i in range(len(alphabet)):  # Gets length of a list
+        code[alphabet[i]] = backwards[i]  # Populates the code dictionary with a letter of the alphabet and its encoded letter
+  
+# print(code)
 --- /code ---
-
+ 
 --- /task ---
 
-Your menu needs a **loop** that continually asks the user what they would like to do until they have entered a valid choice. To get this started, you will create a **variable** called `choice` and set it to `''`. This will allow the **while** loop to run its first loop. 
+### Set up your atbash function
+
+You will now add your new **function** that will encode some text using the **atbash** cypher.
 
 --- task ---
 
-Create a new variable called `choice` and set the value to `''`:
+Find the comment that says `# Encode/decode a piece of text — atbash is symmetrical`. Underneath the comment, define a function called `atbash`, with the **parameter** `text`. Parameters allow you to pass values into functions that can be used within that function.
 
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py - atbash()
 line_numbers: true
-line_number_start: 41
-line_highlights: 43
+line_number_start: 26
+line_highlights: 27
 ---
-# Create a text-based menu system  
-def menu():
-    choice = ''  # Start with a wrong answer for choice.
+# Encode/decode a piece of text — atbash is symmetrical
+def atbash(text):
 
 --- /code ---
 
+Press <kbd>Enter</kbd>. You should see the next line indented. 
+
 --- /task ---
 
-### Use a `while` loop to get user input
+[[[parameters]]]
 
-Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. You want a **while loop** that runs as long as your answer **DOES NOT** match one you have defined. 
+### Convert text to lower case 
+
+First your function needs to convert the `text` to lower case. A new **variable** called `output` then needs to be created to hold the encoded message.
 
 --- task ---
 
-You can use a **while loop** to run a piece of code **while** a **condition** is **True**. In this instance, as long as the user **does not** choose `c` or `f`, the loop will continue to run. Enter the code that will set the **conditions** for a **while loop** and prompt the user for input:
+Beneath the line of code where you have defined the `atbash()` function, type: 
 
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py - atbash()
 line_numbers: true
-line_number_start: 42
-line_highlights: 45-46
+line_number_start: 26
+line_highlights: 28-29
 ---
-def menu():
-    choice = ''  # Start with a wrong answer for choice
-
-    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-        choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
---- /code ---
-
---- /task ---
-
-Once the user has given a correct answer, the loop will end. Next create an `if` statement that will run your `atbash` function if the user enters `c`.
-
-You will decide what happens when a user enters `f` in a later step. 
-
---- task ---
-
-Underneath the last line (making sure you still have an indent!), type:
-
---- code ---
----
-language: python
-filename: main.py - menu()
-line_numbers: true
-line_number_start: 42
-line_highlights: 48-52
----
-def menu():
-    choice = ''  # Start with a wrong answer for choice
-
-    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-        choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
-
-    if choice == 'c':
-        print('Running your message through the cypher…')
-        message = 'my secret message' 
-        code = atbash(message)
-        print(code)
+# Encode/decode a piece of text — atbash is symmetrical
+def atbash(text):
+    text = text.lower()  # Converts text to lower case
+    output = ''
 
 --- /code ---
 
 --- /task ---
 
+### Encode your text
+
+The next part of your code will **encode** the `text` that has been **passed** into the function. A `for` loop is used to go through each letter in the `text` and convert it to an encoded letter using the `code` dictionary. Finally, it will **return** the encoded message.   
+
 --- task ---
 
-Change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded.
+Leave a blank line under the last code you entered (make sure you keep the indent), then type:
 
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py - atbash()
 line_numbers: true
-line_number_start: 42
-line_highlights: 50
+line_number_start: 26
+line_highlights: 31-35
 ---
-def menu():
-    choice = ''  # Start with a wrong answer for choice.
+# Encode/decode a piece of text — atbash is symmetrical
+def atbash(text):
+    text = text.lower()  # Converts text to lower case
+    output = ''
 
-    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-        choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
+    for letter in text: 
+        if letter in code: 
+            output += code[letter]  # Populates output with the encoded/decoded message using the dictionary
 
-    if choice == 'c':
-        print('Running your message through the cypher…')
-        message = 'my secret message'
-        code = atbash(message)
-        print(code)
+    return output  # Return the encoded/decoded message
 
 --- /code ---
 
 --- /task ---
 
+### Test and debug
+
 --- task ---
 
-At the end of your `main()` function, type `menu()` to call the `menu` function when the program runs:
+Now that you have a **function** that will **encode text**, you need to run it to make sure it works. Find your `main()` function and add in a function call to run the `atbash()` function. 
+
+The 'Test' string is **passed** into the function so that it can be encoded. 
 
 --- code ---
 ---
 language: python
 filename: main.py - main()
 line_numbers: true
-line_number_start: 54
-line_highlights: 58
+line_number_start: 45
+line_highlights: 48
 ---
 # Start up
 def main():
     create_code()
-    # print(atbash('Test'))
-    menu()
+    print(atbash('Test'))
 
 --- /code ---
 
@@ -158,20 +139,37 @@ def main():
 
 --- task ---
 
-**Test:** Run your code. Type `c` and press <kbd>Enter</kbd> to encode your message string!
+**Test:** Run your code to see if the test message displays correctly. You should see the console output `gvhg`.
 
-![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
+![The output of the encoded text that is created in this step.](images/test-encoded.PNG){:width="200px"}
 
 **Debug:** If you see a message about an indentation error:
 - Check that you have indented all of your code correctly
 - Look back at the sample code on this page to help you check
 
-**Debug:** If you see the error message `c is not defined` when you run your code, check that you have used apostrophes ('') around your c in the condition `choice != 'c'`.
-
-**Debug:** If nothing happens when you press `c`, check that you have correctly spelled `message`.
-  
 --- /task ---
 
-In the next step you will use your `atbash()` function to encode the contents of a text file.
+--- task ---
+
+**Comment out** your `print(atbash('Test'))` line of code now that you have finished testing. 
+
+--- code ---
+---
+language: python
+filename: main.py - main()
+line_numbers: true
+line_number_start: 45
+line_highlights: 48
+---
+# Start up
+def main():
+    create_code()
+    # print(atbash('Test'))
+
+--- /code ---
+
+--- /task ---
+
+In the next step you will **encode** a message with the help of your `code` dictionary. 
 
 --- save ---
