@@ -4,11 +4,13 @@ In this project you'll make an encoded message and use a graph to crack the code
 --- /task ---
 
 ## Encode the alphabet
-To start, create a dictionary for your encoded letters. 
+To start, create a dictionary for your encoded letters.   
 
-Find the `# Set up data structures` comment, then use the `list()` function to create a **list** of letters from the `alphabet`. 
+Find the comment that says `# Set up data structures`.
 
-**Initialise** the `code` **dictionary** so that you can populate it in a later step.  
+Add the code below to turn `alphabet` into a list of letters using `list()`.
+
+Create an empty dictionary called `code`. You will fill it in later.
 
 --- code ---
 ---
@@ -21,8 +23,11 @@ line_highlights: 6-8
 # Set up data structures
 alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string
 code = {}
-print(alphabet)
+
 --- /code ---
 
-Tip
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
 The `alphabet` list contains spaces at the beginning and end to preserve the spaces in the message. Strong encryption would not do this, as it makes the message easier to decode. The spaces have been kept in for this project to make the messages easier to read. 
+</div>
