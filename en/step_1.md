@@ -27,7 +27,7 @@ code = {}
 <div class="c-project-callout c-project-callout--tip">
 
 ### Tip
-The `alphabet` ist has spaces at the beginning and end so the spaces in the message stay the same.
+The `alphabet` list has spaces at the beginning and end so the spaces in the message stay the same.
 Very strong secret codes would not do this, because it makes messages easier to figure out.
 The spaces are kept here to make the messages easier to read.
 </div>

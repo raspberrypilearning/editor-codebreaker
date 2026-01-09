@@ -34,10 +34,10 @@ line_highlights: 15
 ---
 # Create the atbash code by reversing the alphabet
 def create_code():
-    backwards = list(reversed(alphabet))
+    backwards = list(reversed(alphabet))  # Reverse alphabet
 
-    for i in range(len(alphabet)):  #  Gets length of a list
-        code[alphabet[i]] = backwards[i]  #  Populates the code dictionary with a letter of the alphabet and its encoded letter
+    for i in range(len(alphabet)):  # Go through each letter
+        code[alphabet[i]] = backwards[i]  # Match each letter to its secret letter
 
     print(code)
 --- /code ---

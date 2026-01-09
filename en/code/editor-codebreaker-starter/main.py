@@ -4,7 +4,7 @@ from frequency import english
 # Set things up
 
 
-# Make the secret code by reversing the alphabet
+# Create the atbash code by reversing the alphabet
 
 
 # Calculate the frequency of all letters in a piece of text
