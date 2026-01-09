@@ -17,10 +17,10 @@ line_highlights: 15
         code[alphabet[i]] = backwards[i]  # Match each letter to its secret letter
   
    # print(code)
-   
+
 --- /code ---
 
-<h2 class="c-project-heading--explainer">Make your atbash function</div>
+<h2 class="c-project-heading--explainer">Make your atbash function</h2>
 
 Find the comment that says `# Encode/decode a piece of text — atbash is symmetrical`. 
 
@@ -72,7 +72,7 @@ def atbash(text):
 
 --- /code ---
 
-<h2 class="c-project-heading--explainer">Test and debug</div>
+<h2 class="c-project-heading--explainer">Test and debug</h2>
 
 Add a line in `main()` to test your code using the word `Test`.
 
