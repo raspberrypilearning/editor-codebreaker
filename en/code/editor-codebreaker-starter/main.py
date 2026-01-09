@@ -1,10 +1,10 @@
 from pygal import Bar
 from frequency import english
 
-# Set up data structures
+# Set things up
 
 
-# Create the atbash code by reversing the alphabet
+# Make the secret code by reversing the alphabet
 
 
 # Calculate the frequency of all letters in a piece of text

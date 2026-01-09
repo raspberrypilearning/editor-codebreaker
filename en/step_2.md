@@ -1,27 +1,25 @@
-
-
-
-
-### Create a new list that reverses the alphabet
-
-You need to create a new list that holds the alphabet, but backwards. You can use the `list()` function again to help with this. You can also use the `reversed()` function to reverse an existing list. 
-
+<h2 class="c-project-heading--task">Reverse the alphabet</h2>
 --- task ---
+Make a new list where the alphabet is backwards.
+--- /task ---
 
-Find the `# Create the atbash code by reversing the alphabet` comment then **define** a new function called `create_code`. Next, create a **list** that holds the **reverse** of the `alphabet` list. 
+Use `list()` together with `reversed()` to reverse the letters. 
+
+Under the next comment that says `# Create the atbash code by reversing the alphabet` add the code below.
 
 --- code ---
 ---
 language: python
 filename: main.py - create_code()
 line_numbers: true
-line_number_start: 10 
-line_highlights: 11-12
+line_number_start: 8
+line_highlights: 9-13
 ---
 # Create the atbash code by reversing the alphabet
 def create_code():
-    backwards = list(reversed(alphabet))  # Reverses a list
+    backwards = list(reversed(alphabet))  # Reverse alphabet
 
+    for i in range(len(alphabet)):  # Go through each letter
+        code[alphabet[i]] = backwards[i]  # Match each letter to its secret letter
+    
 --- /code ---
-
---- /task ---
