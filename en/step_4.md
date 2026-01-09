@@ -17,6 +17,7 @@ line_highlights: 15
         code[alphabet[i]] = backwards[i]  # Match each letter to its secret letter
   
    # print(code)
+   
 --- /code ---
 
 <h2 class="c-project-heading--explainer">Make your atbash function</div>
@@ -68,6 +69,7 @@ def atbash(text):
             output += code[letter] # Swap each letter using the code dictionary
 
     return output # Send back the secret message
+
 --- /code ---
 
 <h2 class="c-project-heading--explainer">Test and debug</div>
