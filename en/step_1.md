@@ -18,7 +18,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 5 
-line_highlights: 6-8
+line_highlights: 6-7
 ---
 # Set up data structures
 alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string
