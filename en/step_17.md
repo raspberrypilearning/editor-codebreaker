@@ -40,12 +40,12 @@ def make_chart(text, language):
     chart = Bar(width=800, height=400, title='Frequency analysis', x_labels = list(text.keys())) # Make a bar chart
     chart.add('Target message', list(text.values()))  # Label the frequency data for the encoded message
     chart.add('Language', list(language.values()))  # Label the frequency data for the language
-
-chart.render() #Render the chart 
+    
+    chart.render() #Render the chart 
 --- /code ---
 </div>
 
-<h2 class="c-project-heading--explainer">Call the frequency chart function<h2>
+<h2 class="c-project-heading--explainer">Call the frequency chart function</h2>
 
 In the `menu()` function add the two lines of code below.
 
