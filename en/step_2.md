@@ -1,25 +1,33 @@
-<h2 class="c-project-heading--task">Reverse the alphabet</h2>
+<h2 class="c-project-heading--task">Code set up</h2>
 --- task ---
-Make a new list where the alphabet is backwards.
+Set up the list and code.
 --- /task ---
 
-Use `list()` together with `reversed()` to reverse the letters. 
+## Encode the alphabet
+To start, find the comment that says `# Set up data structures`.
 
-Under the next comment that says `# Create the atbash code by reversing the alphabet` add the code below.
+Add the code below to turn `alphabet` into a list of letters using `list()`.
+
+Create an empty dictionary called `code` that you will fill in later. A dictionary links one thing to another, like a secret letter match.
 
 --- code ---
 ---
 language: python
-filename: main.py - create_code()
+filename: main.py
 line_numbers: true
-line_number_start: 8
-line_highlights: 9-13
+line_number_start: 4 
+line_highlights: 5-6
 ---
-# Create the atbash code by reversing the alphabet
-def create_code():
-    backwards = list(reversed(alphabet))  # Reverse alphabet
+# Set up data structures
+alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # Make a list with the letters of the alphabet
+code = {}
 
-    for i in range(len(alphabet)):  # Go through each letter
-        code[alphabet[i]] = backwards[i]  # Match each letter to its secret letter
-    
 --- /code ---
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+The `alphabet` list has spaces at the beginning and end so the spaces in the message stay the same.
+Very strong secret codes would not do this, because it makes messages easier to figure out.
+The spaces are kept here to make the messages easier to read.
+</div>
