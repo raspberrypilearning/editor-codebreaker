@@ -10,8 +10,10 @@ You will encode or decode a secret message from a .txt file. Letter data can be 
 First, choose ‘c’ to decode a message stored in an attached .txt file
 Then, run the program a second time and choose ‘f’ at the prompt; this will display a letter frequency graph for the message.
 
+<div class="c-project-output">
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/codebreaker-project-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
+</div>
 
 <div class="c-project-callout c-project-callout--tip">
 
