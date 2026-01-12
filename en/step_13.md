@@ -1,9 +1,34 @@
-<h2 class="c-project-heading--task">Frequency of letters</h2>
+<h2 class="c-project-heading--task">Count letters</h2>
 --- task ---
-Now you know how long the message is, you can begin counting the letters in it to determine how often they appear.
+Create a variable called `total_letters` and assign the length of the text to that variable. 
 --- /task ---
 
-Add the `for` loop below to count every time each letter appears in the text. 
+Add the code below to the `frequency` function
+
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 18
+line_highlights: 26
+---
+# Calculate the frequency of all letters in a piece of text
+def frequency(text):
+    text = list(text.lower())  # Convert the message to lower case and make it a list
+
+    freq = {}  # Create a dictionary of every letter, with a count of 0
+    for letter in alphabet:
+        freq[letter] = 0
+
+    total_letters = len(text)  # Count the letters in the message
+--- /code ---
+</div>
+
+Once you know how long the message is, you can begin counting the letters in it to determine how often they appear.
+
+Create a `for` loop to count every time each letter appears in the text. Leave a blank line at the end of your script, make sure you keep the indentation, and add:
 
 <div class="c-project-code">
 --- code ---

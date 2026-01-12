@@ -1,28 +1,81 @@
-SATRT HERE - might need to merge this with next step?
-
-<h2 class="c-project-heading--task">Add text to the file</h2>
+<h2 class="c-project-heading--task">Add message</h2>
 --- task ---
-**Add** your own secret message to the `input.txt` file. 
+Add a message to encode `if` the user enters `c`.
 --- /task ---
 
-Find `input.txt` in the file tab. Delete the `replace with your message` text and enter your own secret message. 
+Add the code below.
 
-**Test:** Run your code to see if it displays your encoded message after entering the letter 'c' when prompted. 
+You can change the text that says `'my secret message'` to anything you like. This text will be encoded and decoded.
+
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 37
+line_highlights: 44-48
+---
+def menu():
+    choice = ''  # Wrong answer
+
+    while choice != 'c' and choice != 'f':  # asking for the right answer
+        choice = input('Enter c to encode/decode text, or f for frequency analysis: ')
+
+    if choice == 'c':
+        print('Running your message through the cypher…')
+        message = 'my secret message' # text to encode
+        code = atbash(message)
+        print(code)
+
+--- /code ---
+</div>
+
+Under `# Start up` comment, add `menu()` to call when the program runs. 
+
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py 
+line_numbers: true
+line_number_start: 50
+line_highlights: 54
+---
+# Start up
+def main():
+    create_code()
+    # print(atbash('Test'))
+    menu()
+
+main()
+
+--- /code ---
+</div>
+
+**Test:** Run your code to see the user prompt. 
 
 <div class="c-project-output">
-![A screenshot displaying the encoded secret message.](images/input-text-test.PNG)
-<div>
+<pre>Enter c to encode/decode text, or f for frequency analysis: <pre>
+</div
+
+Type `c` and press **Enter** to encode your message! 
 
 <div class="c-project-callout c-project-callout--debug">
 
+<div class="c-project-output">
+<pre>Running your message through the cypher…
+nb hvxivg nvhhztv<pre>
+</div
+
+Chang the`message` text and run your code again to see different encoded messages. 
+
 ### Debugging
-**Debug:** Your encoded message doesn't look exactly like the message in the screenshot:
-- This is normal. This is the encoded message for the text `replace with your message`. Your message will be different.
+If you see a message about an indentation error:
+- Check that you have indented all of your code correctly
+- Look back at the sample code on this page to help you check
 
-**Debug:** You see an error message that says `TypeError: get_text() takes exactly 1 arguments`:
-- Check that you have entered `input.txt` inside the round brackets on line 57
+If you see the error message `c is not defined` when you run your code, check that you have used apostrophes ('') around your c in the condition `choice != 'c'`.
 
-**Debug:** You see an `Indentation error` message:
-- Check that you have correctly indented all of your new code. Revisit the tasks above to check. 
-
+If nothing happens when you press `c`, check that you have correctly spelled `message`.
 </div>

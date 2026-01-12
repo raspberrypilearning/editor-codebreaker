@@ -1,21 +1,50 @@
-<h2 class="c-project-heading--task">Decode the message</h2>
+<h2 class="c-project-heading--task">Encode text from a file</h2>
 --- task ---
-Test the code by decoding the secret message
+ **Replace** your secret message with a `.txt` file to encode more text.
 --- /task ---
 
-**Run** your code so that it displays your encoded message. 
+Find the `# Fetch and return text from a file` comment and add the code below. 
 
-**Select** the encoded message and copy it. 
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py 
+line_numbers: true
+line_number_start: 34
+line_highlights: 35-39
+---
+# Fetch and return text from a file
+def get_text(filename): 
+    with open(filename) as f: # open the file
+        text = f.read().replace('\n','')  # read file and replace newline
 
-In `input.txt` delete your message. Next, **paste** your new message into the empty file. 
-
-**Test:** Run your code again and press 'c' when prompted. It will display the **decoded** version of your original message. 
-
-<div class="c-project-output">
-![A screenshot of the decoded message being displayed as output.](images/decoded.PNG)
+    return text # Return the text
+--- /code ---
 </div>
 
-<div class="c-project-callout c-project-callout--debug">
+In `menu()` **replace** your secret `message` with `get_text()`. This is where the name of the `.txt` file goes.
 
-### Debugging
-If ir still displays the encoded message, make sure that you have copy and pasted the **encoded** message into `input.txt`
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py 
+line_numbers: true
+line_number_start: 41
+line_highlights: 50
+---
+# Create a text-based menu system
+def menu():
+    choice = ''  # Start with a wrong answer for choice.
+
+    while choice != 'c' and choice != 'f':  # Asking for the right answer
+        choice = input('Enter c to encode/decode text, or f for frequency analysis: ')
+
+    if choice == 'c':
+        print('Running your message through the cypher…')
+        message = get_text('input.txt')  # Take input from a file
+        code = atbash(message)
+        print(code)
+--- /code ---
+</div>
