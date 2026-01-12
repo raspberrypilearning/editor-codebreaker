@@ -11,6 +11,7 @@ listed: false
 copyedit: false
 last_tested: "2021-03-26"
 steps:
+  - title: Step 0
   - title: Step 1
   - title: Step 2
   - title: Step 3

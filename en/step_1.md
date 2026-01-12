@@ -1,6 +1,6 @@
-<h2 class="c-project-heading--task">Encode a secret message</h2>
+<h2 class="c-project-heading--task">Code set up</h2>
 --- task ---
-In this project you will turn a message into a secret message, then use a graph to work out how to read it.
+Set up the list and code.
 --- /task ---
 
 ## Encode the alphabet
