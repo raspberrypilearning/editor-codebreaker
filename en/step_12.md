@@ -1,31 +1,23 @@
-## Upgrade your project
+<h2 class="c-project-heading--task">Challenge</h2>
+--- task ---
+Upgrade your project! Have a look at these example projects to spark some ideas of your own!
+--- /task --- 
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, discover ways to upgrade your project!
-
-</div>
-<div>
-![A boy and a girl sit at a computer, working together on a programming project.](images/partner-work.PNG){:width="300px"}
-</div>
-</div>
-
-### Get inspiration
-Have a look at these example projects to spark some ideas of your own!
-
-This project has an extra menu option to enter and encode your own short text:
-
-**Custom short message encoder:**
+<h2 class="c-project-heading--explainer">Custom short message encoder</h2>
+<div class="c-project-output">
+This project has an extra menu option to enter and encode your own short text
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/short-message-encoder" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
+</div>
 
 You can find the Custom short message encoder project [here](https://editor.raspberrypi.org/en/projects/short-message-encoder){:target="_blank"}
 
+<h2 class="c-project-heading--explainer">Three language atbash encoder</h2>
 This project can complete frequency analysis in English, French, or Spanish:
-
-**Three language atbash encoder:**
+<div class="c-project-output">
 <iframe src="https://editor.raspberrypi.org/en/embed/viewer/three-language-encoder" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
 </iframe>
+</div>
 
 You can find the Three language atbash encoder project [here](https://editor.raspberrypi.org/en/projects/three-language-encoder){:target="_blank"}
 
@@ -52,15 +44,3 @@ Add another menu item to allow users to change the language.
 If possible, swap your cyphertext with a partner and see if they can crack your code using their frequency analyser. 
 
 --- /task ---
-
---- collapse ---
-
----
-title: Completed project
----
-
-You can view the [completed project here](https://editor.raspberrypi.org/en/projects/codebreaker-project-example).
-
---- /collapse ---
-
---- save ---
