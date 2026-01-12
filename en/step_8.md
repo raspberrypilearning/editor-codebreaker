@@ -9,8 +9,6 @@ Test the code by decoding the secret message
 
 In `input.txt` delete your message. Next, **paste** your new message into the empty file. 
 
---- task ---
-
 **Test:** Run your code again and press 'c' when prompted. It will display the **decoded** version of your original message. 
 
 <div class="c-project-output">
