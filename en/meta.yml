@@ -11,7 +11,6 @@ listed: false
 copyedit: false
 last_tested: "2021-03-26"
 steps:
-  - title: Step 0
   - title: Step 1
   - title: Step 2
   - title: Step 3
@@ -25,6 +24,7 @@ steps:
   - title: Step 11
   - title: Step 12
   - title: Step 13
+  - title: Step 14
     knowledge_quiz:
       path: quiz1
       version: 1
