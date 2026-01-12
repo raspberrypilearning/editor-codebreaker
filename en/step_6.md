@@ -3,7 +3,7 @@
 Create a menu that asks your user to make choices about what they would like to do.
 --- /task ---
 
-Before you start **comment out** `print(atbash('Test'))` that you just added in `main()`. 
+Before you start **comment out** `print(atbash('Test'))` in `main()`. 
 
 <div class="c-project-code">
 --- code ---
@@ -19,6 +19,7 @@ def main():
     create_code()
     # print(atbash('Test'))
 
+main()
 --- /code ---
 </div>
 
@@ -51,6 +52,7 @@ line_numbers: true
 line_number_start: 37
 line_highlights: 41-42
 ---
+# Create a text-based menu system  
 def menu():
     choice = ''  # Wrong answer
 

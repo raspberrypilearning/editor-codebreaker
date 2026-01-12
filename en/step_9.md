@@ -1,19 +1,22 @@
-SATRT HERE - might need to merge this with next step?
-
 <h2 class="c-project-heading--task">Add text to the file</h2>
 --- task ---
-**Add** your own secret message to the `input.txt` file. 
+Add your own secret message to the `input.txt` file. 
 --- /task ---
 
-Find `input.txt` in the file tab. Delete the `replace with your message` text and enter your own secret message. 
+Find `input.txt` in the file tab. Delete the `replace with your message` text and enter your own text. 
+
+![screenshot of the project file tab with the input file open for editing](images/input-file.png)
 
 **Test:** Run your code to see if it displays your encoded message after entering the letter 'c' when prompted. 
 
 Add image **
 
 <div class="c-project-output">
-![A screenshot displaying the encoded secret message.](images/input-text-test.PNG)
-<div>
+<pre>Enter c to encode/decode text, or f for frequency analysis: 
+c
+Running your message through the cypher…
+svool gsrh rh z gvhg</pre>
+</div>
 
 <div class="c-project-callout c-project-callout--debug">
 

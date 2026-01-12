@@ -13,8 +13,8 @@ line_numbers: true
 line_number_start: 12
 line_highlights: 15
 ---
-    for i in range(len(alphabet)):  # Go through each letter
-        code[alphabet[i]] = backwards[i]  # Match each letter to its secret letter
+    for i in range(len(alphabet)):
+        code[alphabet[i]] = backwards[i]  # Match letters
   
    # print(code)
 
@@ -72,7 +72,7 @@ def atbash(text):
 
 <h2 class="c-project-heading--explainer">Test and debug</h2>
 
-Add `print()` in `main()` to test your code.
+Find the `# Start up` comment and add the `print()` line to test your code.
 
 <div class="c-project-code">
 --- code ---
@@ -88,13 +88,21 @@ def main():
     create_code()
     print(atbash('Test'))
 
+main()
 --- /code ---
 </div>
 
-**Test:** Run your code. You should see `gvhg`. To change the output, replace `'Test'` with another word.
+**Test:** Run your code. You should see `gvhg`. 
 
 <div class="c-project-output">
 <pre>gvhg</pre>
+</div>
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+To change the output, replace `'Test'` with another word.
 </div>
 
 <div class="c-project-callout c-project-callout--debug">

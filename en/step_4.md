@@ -24,7 +24,7 @@ main()
 
 Now add `print` so you can check that your code works.
 
-In the `# Create the atbash code by reversing the alphabet` code add the following line:
+In the `# Create the atbash code by reversing the alphabet` code, add the following line:
 
 <div class="c-project-code">
 --- code ---
@@ -39,8 +39,8 @@ line_highlights: 15
 def create_code():
     backwards = list(reversed(alphabet))  # Reverse alphabet
 
-    for i in range(len(alphabet)):  # Go through each letter
-        code[alphabet[i]] = backwards[i]  # Match each letter to its secret letter
+    for i in range(len(alphabet)):
+        code[alphabet[i]] = backwards[i]  # Match letters
 
     print(code)
 --- /code ---

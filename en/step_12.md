@@ -1,9 +1,7 @@
 <h2 class="c-project-heading--task">Add frequency dictionary</h2>
 --- task ---
-The code will assign a value of `0` for every `letter` in the list `alphabet`.
---- /task ---
-
 Add the code below to create a dictionary called `freq`.
+--- /task ---
 
 Make sure you **keep the indentation**.
 
@@ -11,9 +9,9 @@ Make sure you **keep the indentation**.
 --- code ---
 ---
 language: python
-filename: main.py - frequency()
+filename: main.py
 line_numbers: true
-line_number_start: 18
+line_number_start: 17
 line_highlights: 22-24
 ---
 # Calculate the frequency of all letters in a piece of text
@@ -25,4 +23,3 @@ def frequency(text):
         freq[letter] = 0
 --- /code ---
 </div>
-
