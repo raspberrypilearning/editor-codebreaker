@@ -10,6 +10,7 @@ Your secret message is quite small, which makes it tricky to analyse using a fre
 
 Change `input.txt` to `longer.txt`.
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -23,6 +24,7 @@ line_highlights: 77
         message = get_text('longer.txt') 
         message_freq = frequency(message)  # Get the frequency of the letters in the message, as %
 --- /code ---
+</div>
 
 **Analyse** the frequency chart by looking at the **Language** values and the **Target message** values. Notice how the highest bar for **Language** is **e** and the highest bar for **Target message** is **v**. This is because with the **Atbash** cypher, the letter **e** is encoded with the letter **v**. 
 

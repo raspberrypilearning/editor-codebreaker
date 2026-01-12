@@ -1,43 +1,9 @@
-<h2 class="c-project-heading--task">Encode text from a file</h2>
+SATRT HERE - might need to merge this with next step?
 
-Find the `# Fetch and return text from a file` comment and add the code below. 
-
-then define a `get_text()` function. This function has one parameter called `filename`. Use the `filename` to open the file and read it into the `text` variable, then **return** the `text` variable.
-
---- code ---
----
-language: python
-filename: main.py 
-line_numbers: true
-line_number_start: 37
-line_highlights: 38-42
----
-# Fetch and return text from a file
-def get_text(filename): 
-    with open(filename) as f: # open the file
-        text = f.read().replace('\n','')  # read file and replace newline
-
-    return text # Return the text
---- /code ---
-
-The `menu()` function needs to encode a secret message from a text file. **Replace** your secret message with the `get_text()` function call. Enter the name of the file `input.txt`.
-
---- code ---
----
-language: python
-filename: main.py 
-line_numbers: true
-line_number_start: 52
-line_highlights: 54
----
-    if choice == 'c':
-        print('Running your message through the cypher…')
-        message = get_text('input.txt')  # Take input from a file
-        code = atbash(message)
-        print(code)
---- /code ---
-
-You can now **add** your own secret message to the `input.txt` file. 
+<h2 class="c-project-heading--task">Add text to the file</h2>
+--- task ---
+**Add** your own secret message to the `input.txt` file. 
+--- /task ---
 
 Find `input.txt` in the file tab. Delete the `replace with your message` text and enter your own secret message. 
 

@@ -1,15 +1,14 @@
-<h2 class="c-project-heading--task">Code set up</h2>
+<h2 class="c-project-heading--task">Set up code</h2>
 --- task ---
-Set up the list and code.
+Set up the list and code functions.
 --- /task ---
 
 <h2 class="c-project-heading--explainer">Encode the alphabet</h2>
-To start, find the comment that says `# Set up data structures`.
+To start, find the comment that says `# Set things up`.
 
-Add the code below to turn `alphabet` into a list of letters using `list()`.
+Add the Python code below to turn `alphabet` into a list of letters. You will add to `code = {}` later.
 
-Create an empty dictionary called `code` that you will fill in later. A dictionary links one thing to another, like a secret letter match.
-
+<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -18,11 +17,11 @@ line_numbers: true
 line_number_start: 4 
 line_highlights: 5-6
 ---
-# Set up data structures
+# Set things up
 alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # Make a list with the letters of the alphabet
-code = {}
-
+code = {} 
 --- /code ---
+</div>
 
 <div class="c-project-callout c-project-callout--tip">
 

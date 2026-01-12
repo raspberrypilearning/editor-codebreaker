@@ -11,6 +11,7 @@ Frequency analysis measures how often something appears so you can look for patt
 
 Beneath the comment that reads `# Calculate the frequency of all letters in a piece of text`, define a function called `frequency`, and have the first thing it does be to convert your message to lower case and make it a list:
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -23,9 +24,11 @@ line_highlights: 19-20
 def frequency(text):
     text = list(text.lower())  # Convert the message to lower case and make it a list
 --- /code ---
+</div>
 
 Create a dictionary called `freq` and for every `letter` in the list `alphabet` assign a value of `0`. Make sure you **keep the indentation** and type:
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -42,9 +45,11 @@ def frequency(text):
     for letter in alphabet:
         freq[letter] = 0
 --- /code ---
+</div>
 
 Create a variable called `total_letters` and assign the length of the text to that variable. 
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -63,11 +68,13 @@ def frequency(text):
 
     total_letters = len(text)  # Count the letters in the message
 --- /code ---
+</div>
 
 Once you know how long the message is, you can begin counting the letters in it to determine how often they appear.
 
 Create a `for` loop to count every time each letter appears in the text. Leave a blank line at the end of your script, make sure you keep the indentation, and add:
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -90,10 +97,12 @@ def frequency(text):
         if letter in freq:
             freq[letter] += 1
 --- /code ---
+</div>
 
 
 Create a `loop` that converts the number of times the letters appear into a percentage of the whole message.
  
+ <div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -119,10 +128,12 @@ def frequency(text):
     for letter in freq:
         freq[letter] = freq[letter] / total_letters * 100  # Convert from counts to percentages
 --- /code ---
+</div>
 
 
 **Return** the frequency dictionary so it can be used elsewhere in your code. Leave a blank line and type:
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -150,6 +161,7 @@ def frequency(text):
 
     return freq
 --- /code ---
+</div>
 
 ### Extend the menu to include 'f'
 
@@ -159,6 +171,7 @@ Underneath your first `if` statement asking the user to select 'c', you need to 
 
 Leave a blank line after the `if` statement and, on line 72, type:
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -182,6 +195,7 @@ line_highlights: 72-76
         message_freq = frequency(message)
         print(message_freq)
 --- /code ---
+</div>
 
 
 **Test:** Run your code. Choose 'f' at the prompt and you should see a readout of the letter frequency of your message in the console. The values you see from your message will be different from the values shown here:

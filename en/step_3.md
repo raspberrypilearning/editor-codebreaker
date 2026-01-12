@@ -1,12 +1,11 @@
 <h2 class="c-project-heading--task">Reverse the alphabet</h2>
 --- task ---
-Make a new list where the alphabet is backwards.
+Make a new list where the alphabet is reversed.
 --- /task ---
-
-Use `list()` together with `reversed()` to reverse the letters. 
 
 Under the next comment that says `# Create the atbash code by reversing the alphabet` add the code below.
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -19,7 +18,7 @@ line_highlights: 9-13
 def create_code():
     backwards = list(reversed(alphabet))  # Reverse alphabet
 
-    for i in range(len(alphabet)):  # Go through each letter
-        code[alphabet[i]] = backwards[i]  # Match each letter to its secret letter
-    
+    for i in range(len(alphabet)):
+        code[alphabet[i]] = backwards[i]  # Match letters
 --- /code ---
+</div>
