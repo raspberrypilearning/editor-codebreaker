@@ -22,7 +22,7 @@ Beneath the comment that reads `# Calculate the frequency of all letters in a pi
 --- code ---
 ---
 language: python
-filename: main.py - frequency()
+filename: main.py
 line_numbers: true
 line_number_start: 18
 line_highlights: 19-20
@@ -66,7 +66,7 @@ Make sure you **keep the indentation** as shown in this code.
 --- code ---
 ---
 language: python
-filename: main.py - frequency()
+filename: main.py
 line_numbers: true
 line_number_start: 18
 line_highlights: 26
@@ -93,7 +93,7 @@ Create a `for` loop to count every time each letter appears in the text. Leave a
 --- code ---
 ---
 language: python
-filename: main.py - frequency()
+filename: main.py
 line_numbers: true
 line_number_start: 18
 line_highlights: 28-30
@@ -144,7 +144,7 @@ Create a `loop` that converts the number of times the letters appear into a perc
 --- code ---
 ---
 language: python
-filename: main.py - frequency()
+filename: main.py
 line_numbers: true
 line_number_start: 18
 line_highlights: 32-33
@@ -176,7 +176,7 @@ def frequency(text):
 --- code ---
 ---
 language: python
-filename: main.py - frequency()
+filename: main.py
 line_numbers: true
 line_number_start: 18
 line_highlights: 35
@@ -216,7 +216,7 @@ Leave a blank line after the `if` statement and, on line 72, type:
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py
 line_numbers: true
 line_number_start: 63
 line_highlights: 72-76

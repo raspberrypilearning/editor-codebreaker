@@ -33,7 +33,7 @@ Inside the function:
 --- code ---
 ---
 language: python
-filename: main.py - atbash()
+filename: main.py
 line_numbers: true
 line_number_start: 23
 line_highlights: 24-26
@@ -54,7 +54,7 @@ Use the `code` dictionary to swap each letter for its secret letter. When all th
 --- code ---
 ---
 language: python
-filename: main.py - atbash()
+filename: main.py
 line_numbers: true
 line_number_start: 23
 line_highlights: 28-32
@@ -79,7 +79,7 @@ Add a line in `main()` to test your code using the word `Test`.
 --- code ---
 ---
 language: python
-filename: main.py - main()
+filename: main.py
 line_numbers: true
 line_number_start: 40
 line_highlights: 43
@@ -111,7 +111,7 @@ If you see a message about an indentation error:
 --- code ---
 ---
 language: python
-filename: main.py - main()
+filename: main.py
 line_numbers: true
 line_number_start: 40
 line_highlights: 43

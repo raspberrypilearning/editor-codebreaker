@@ -19,7 +19,7 @@ The `print(message_freq)` line of code is no longer needed. Add a `#` to the beg
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py
 line_numbers: true
 line_number_start: 72
 line_highlights: 76
@@ -44,7 +44,7 @@ The `freq` dictionary values will be passed into the function when it is called 
 --- code ---
 ---
 language: python
-filename: main.py - make_chart()
+filename: main.py
 line_numbers: true
 line_number_start: 36
 line_highlights: 37-38
@@ -84,7 +84,7 @@ def make_chart(text, language):
 --- code ---
 ---
 language: python
-filename: main.py - make_chart()
+filename: main.py
 line_numbers: true
 line_number_start: 36
 line_highlights: 42
@@ -109,7 +109,7 @@ Find your `elif` in the `menu()` function. Add a line of code that will **import
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py
 line_numbers: true
 line_number_start: 75
 line_highlights: 80-81

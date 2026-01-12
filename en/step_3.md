@@ -10,7 +10,7 @@ Under the next comment that says `# Create the atbash code by reversing the alph
 --- code ---
 ---
 language: python
-filename: main.py - create_code()
+filename: main.py
 line_numbers: true
 line_number_start: 8
 line_highlights: 9-13

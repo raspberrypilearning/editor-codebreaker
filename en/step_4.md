@@ -10,7 +10,7 @@ Under the the `# Start up` comment, add the code below.
 --- code ---
 ---
 language: python
-filename: main.py - main()
+filename: main.py
 line_numbers: true
 line_number_start: 30
 line_highlights: 31-34
@@ -27,7 +27,7 @@ Now add `print` so you can check that your code works.
 --- code ---
 ---
 language: python
-filename: main.py - create_code()
+filename: main.py
 line_numbers: true
 line_number_start: 8
 line_highlights: 15

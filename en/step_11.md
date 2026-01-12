@@ -15,7 +15,7 @@ Change `input.txt` to `longer.txt`.
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py
 line_numbers: true
 line_number_start: 75
 line_highlights: 77
