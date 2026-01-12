@@ -77,7 +77,6 @@ def menu():
         #print(message_freq)
         lang_freq = english  # Import the English frequency dictionary
         make_chart(message_freq, lang_freq)  # Call the function to make a chart
-        
 --- /code ---
 </div>
 
