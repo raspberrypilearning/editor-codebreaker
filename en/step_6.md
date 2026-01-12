@@ -84,7 +84,7 @@ def main():
 
 --- /code ---
 
-**Test:** Run your code. Type `c` and press <kbd>Enter</kbd> to encode your message!
+**Test:** Run your code. Type `c` and press **Enter** to encode your message!
 
 <div class="c-project-output">
 ![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
