@@ -91,7 +91,7 @@ def main():
 --- /code ---
 </div>
 
-**Test:** Run your code. You should see `gvhg`. To change the output, replace 'Test' with another word.
+**Test:** Run your code. You should see `gvhg`. To change the output, replace `'Test'` with another word.
 
 <div class="c-project-output">
 <pre>gvhg</pre>
@@ -103,5 +103,4 @@ def main():
 If you see a message about an indentation error:
 - Check that you have indented all of your code correctly
 - Look back at the sample code on this page to help you check
-
 </div>

@@ -56,20 +56,19 @@ main()
 **Test:** Run your code to see the user prompt. 
 
 <div class="c-project-output">
-<pre>Enter c to encode/decode text, or f for frequency analysis: <pre>
-</div
+<pre>Enter c to encode/decode text, or f for frequency analysis: </pre>
+</div>
 
 Type `c` and press **Enter** to encode your message! 
 
-<div class="c-project-callout c-project-callout--debug">
-
 <div class="c-project-output">
 <pre>Running your message through the cypher…
-nb hvxivg nvhhztv<pre>
-</div
+nb hvxivg nvhhztv</pre>
+</div>
 
-Chang the`message` text and run your code again to see different encoded messages. 
+To see different encoded messages change the `'my secret message'` text and run your code again.
 
+<div class="c-project-callout c-project-callout--debug">
 ### Debugging
 If you see a message about an indentation error:
 - Check that you have indented all of your code correctly

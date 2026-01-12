@@ -40,7 +40,7 @@ def menu():
 --- /code ---
 </div>
 
-Create a **while loop** that runs as long as your answer **DOES NOT** match one you have defined. 
+Create a **while loop** that runs as long as your answer **DOES NOT** match one you have defined. As long as the user **does not** choose `c` or `f`, the loop will continue to run. 
 
 <div class="c-project-code">
 --- code ---
@@ -58,5 +58,3 @@ def menu():
         choice = input('Enter c to encode/decode text, or f for frequency analysis: ')
 --- /code ---
 </div>
-
-As long as the user **does not** choose `c` or `f`, the loop will continue to run. 
