@@ -1,45 +1,19 @@
-## Create a menu 
-
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Now you are going to create a menu system for your user to make choices about what they would like to do. 
-</div>
-<div>
-![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
-</div>
-</div>
-
+<h2 class="c-project-heading--task">Create a menu</h2>
 --- task ---
-
-**Find** the comment in your code that says `# Create a text-based menu system` and begin by defining a function called `menu()`:
-
---- code ---
----
-language: python
-filename: main.py - menu()
-line_numbers: true
-line_number_start: 41
-line_highlights: 42
----
-# Create a text-based menu system
-def menu():
---- /code ---
-
+Create a menu system for your user to make choices about what they would like to do
 --- /task ---
 
-Your menu needs a **loop** that continually asks the user what they would like to do until they have entered a valid choice. To get this started, you will create a **variable** called `choice` and set it to `''`. This will allow the **while** loop to run its first loop. 
-
---- task ---
+**Find** the comment in your code that says `# Create a text-based menu system` and begin by defining a function called `menu()`:
 
 Create a new variable called `choice` and set the value to `''`:
 
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py 
 line_numbers: true
 line_number_start: 41
-line_highlights: 43
+line_highlights: 43-44
 ---
 # Create a text-based menu system  
 def menu():
@@ -47,20 +21,14 @@ def menu():
 
 --- /code ---
 
---- /task ---
+Create a **while loop** that runs as long as your answer **DOES NOT** match one you have defined. 
 
-### Use a `while` loop to get user input
-
-Now that you have set `choice` to a wrong answer, you want to create a **loop** that will only break if an `input` that matches a right answer is given. You want a **while loop** that runs as long as your answer **DOES NOT** match one you have defined. 
-
---- task ---
-
-You can use a **while loop** to run a piece of code **while** a **condition** is **True**. In this instance, as long as the user **does not** choose `c` or `f`, the loop will continue to run. Enter the code that will set the **conditions** for a **while loop** and prompt the user for input:
+As long as the user **does not** choose `c` or `f`, the loop will continue to run. Enter the code that will set the **conditions** for a **while loop** and prompt the user for input:
 
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py 
 line_numbers: true
 line_number_start: 42
 line_highlights: 45-46
@@ -69,23 +37,17 @@ def menu():
     choice = ''  # Start with a wrong answer for choice
 
     while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-        choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
+        choice = input('Enter c to encode/decode text, or f for frequency analysis: ')
 --- /code ---
 
---- /task ---
+Next create an `if` statement that will run your `atbash` function if the user enters `c`.
 
-Once the user has given a correct answer, the loop will end. Next create an `if` statement that will run your `atbash` function if the user enters `c`.
-
-You will decide what happens when a user enters `f` in a later step. 
-
---- task ---
-
-Underneath the last line (making sure you still have an indent!), type:
+You can change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded.
 
 --- code ---
 ---
 language: python
-filename: main.py - menu()
+filename: main.py
 line_numbers: true
 line_number_start: 42
 line_highlights: 48-52
@@ -104,44 +66,12 @@ def menu():
 
 --- /code ---
 
---- /task ---
-
---- task ---
-
-Change the string that says `'my secret message'` to anything you like. This string is the message that will be encoded and decoded.
-
---- code ---
----
-language: python
-filename: main.py - menu()
-line_numbers: true
-line_number_start: 42
-line_highlights: 50
----
-def menu():
-    choice = ''  # Start with a wrong answer for choice.
-
-    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-        choice = input('Please enter c to encode/decode text, or f to perform frequency analysis: ')
-
-    if choice == 'c':
-        print('Running your message through the cypher…')
-        message = 'my secret message'
-        code = atbash(message)
-        print(code)
-
---- /code ---
-
---- /task ---
-
---- task ---
-
 At the end of your `main()` function, type `menu()` to call the `menu` function when the program runs:
 
 --- code ---
 ---
 language: python
-filename: main.py - main()
+filename: main.py 
 line_numbers: true
 line_number_start: 54
 line_highlights: 58
@@ -154,24 +84,20 @@ def main():
 
 --- /code ---
 
---- /task ---
+**Test:** Run your code. Type `c` and press <kbd>Enter</kbd> to encode your message!
 
---- task ---
-
-**Test:** Run your code. Type `c` and press <kbd>Enter</kbd> to encode your message string!
-
+<div class="c-project-output">
 ![The output of the code created in this step. An encoded version of a secret message is displayed.](images/encode-a-message.PNG){:width="400px"}
+</div
 
-**Debug:** If you see a message about an indentation error:
+<div class="c-project-callout c-project-callout--debug">
+
+### Debugging
+If you see a message about an indentation error:
 - Check that you have indented all of your code correctly
 - Look back at the sample code on this page to help you check
 
-**Debug:** If you see the error message `c is not defined` when you run your code, check that you have used apostrophes ('') around your c in the condition `choice != 'c'`.
+If you see the error message `c is not defined` when you run your code, check that you have used apostrophes ('') around your c in the condition `choice != 'c'`.
 
-**Debug:** If nothing happens when you press `c`, check that you have correctly spelled `message`.
-  
---- /task ---
-
-In the next step you will use your `atbash()` function to encode the contents of a text file.
-
---- save ---
+If nothing happens when you press `c`, check that you have correctly spelled `message`.
+</div>

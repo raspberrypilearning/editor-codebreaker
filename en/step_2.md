@@ -3,7 +3,7 @@
 Set up the list and code.
 --- /task ---
 
-## Encode the alphabet
+<h2 class="c-project-heading--explainer">Encode the alphabet</h2>
 To start, find the comment that says `# Set up data structures`.
 
 Add the code below to turn `alphabet` into a list of letters using `list()`.
