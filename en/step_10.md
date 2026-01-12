@@ -24,8 +24,6 @@ line_highlights: 76
 
 <h2 class="c-project-heading--explainer">Make the frequency chart function</h2>
 
---- task ---
-
 Find the `# Make frequency chart` comment and create a new function called `make_chart()`. 
 
 <div class="c-project-code">
