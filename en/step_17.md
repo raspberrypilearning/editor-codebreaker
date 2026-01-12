@@ -20,8 +20,9 @@ line_highlights: 77
 ---
     elif choice == 'f':
         print('Analysing message…')
-        message = get_text('longer.txt') 
-        message_freq = frequency(message)  # Get the frequency of the letters in the message, as %
+        message = get_text('longer.txt')
+        message_freq = frequency(message)
+        # print(message_freq)
 --- /code ---
 </div>
 

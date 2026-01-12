@@ -11,8 +11,8 @@ First add a `#` to the beginning of the `print(message_freq)` line so that Pytho
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 72
-line_highlights: 76
+line_number_start: 70
+line_highlights: 74
 ---
     elif choice == 'f':
         print('Analysing message…')
@@ -33,7 +33,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 36
-line_highlights: 37-38
+line_highlights: 37-42
 ---
 # Make frequency chart
 def make_chart(text, language): 
@@ -55,11 +55,12 @@ In the `menu()` function add the two lines of code below.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 75
-line_highlights: 80-81
+line_number_start: 62
+line_highlights: 81-82
 ---
+# Create a text-based menu system  
 def menu():
-    choice = ''  # Start with a wrong answer for choice.
+    choice = ''  # Wrong answer
 
     while choice != 'c' and choice != 'f':  # Asking for the right answer
         choice = input('Enter c to encode/decode text, or f for frequency analysis: ')
@@ -87,6 +88,8 @@ def menu():
 </div>
 
 <div class="c-project-callout c-project-callout--debug">
+### Debugging
+
 Your chart doesn't look exactly the same as the one displayed in the image above:
 - This is normal. Your chart will display the frequency data for the secret message that you have entered in `input.txt`.
 
