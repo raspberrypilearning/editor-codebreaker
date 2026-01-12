@@ -1,6 +1,6 @@
 <h2 class="c-project-heading--task">Encode text from a file</h2>
 --- task ---
- **Replace** your secret message with a `.txt` file to encode more text.
+ Replace your secret message with a `.txt` file to encode more text.
 --- /task ---
 
 Find the `# Fetch and return text from a file` comment and add the code below. 
@@ -23,7 +23,7 @@ def get_text(filename):
 --- /code ---
 </div>
 
-In `menu()` **replace** your secret `message` with `get_text()`. This is where the name of the `.txt` file goes.
+In `menu()` **replace** your secret `'my secret message'` with `get_text()`. This is where the name of the `.txt` file goes.
 
 <div class="c-project-code">
 --- code ---

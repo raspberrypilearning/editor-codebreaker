@@ -18,7 +18,7 @@ line_number_start: 4
 line_highlights: 5-6
 ---
 # Set things up
-alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # Make a list with the letters of the alphabet
+alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # Make a list of letters
 code = {} 
 --- /code ---
 </div>

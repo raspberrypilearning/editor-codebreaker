@@ -12,7 +12,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 17
-line_highlights: 22-24
+line_highlights: 21-23
 ---
 # Calculate the frequency of all letters in a piece of text
 def frequency(text):

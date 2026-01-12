@@ -5,8 +5,6 @@ Add a message to encode `if` the user enters `c`.
 
 Add the code below.
 
-You can change the text that says `'my secret message'` to anything you like. This text will be encoded and decoded.
-
 <div class="c-project-code">
 --- code ---
 ---
@@ -16,6 +14,7 @@ line_numbers: true
 line_number_start: 37
 line_highlights: 44-48
 ---
+# Create a text-based menu system 
 def menu():
     choice = ''  # Wrong answer
 
@@ -66,7 +65,12 @@ Type `c` and press **Enter** to encode your message!
 nb hvxivg nvhhztv</pre>
 </div>
 
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
 To see different encoded messages change the `'my secret message'` text and run your code again.
+</tip>
 
 <div class="c-project-callout c-project-callout--debug">
 ### Debugging

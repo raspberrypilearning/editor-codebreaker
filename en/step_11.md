@@ -27,4 +27,3 @@ def frequency(text):
     text = list(text.lower())  # Make lower case and a list
 --- /code ---
 </div>
-
