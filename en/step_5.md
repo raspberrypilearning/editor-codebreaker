@@ -10,7 +10,7 @@ You can edit the file by typing into it, or you can leave it as it is.
 
 ![screenshot of the project file tab with the input file open for editing](images/input-file.png)
 
-The code below reads the text from the file. Paste it into your project, then print the text to check it works.
+The code below reads the text from the file. Paste the code into your project, then print the text to check it works.
 
 <div class="c-project-code">
 --- code ---
