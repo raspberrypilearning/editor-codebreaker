@@ -1,7 +1,6 @@
 <h2 class="c-project-heading--task">Create a dictionary</h2>
 --- task ---
 Create a dictionary that maps each letter in `alphabet` to the matching letter in `backwards`.
---- /task ---.
 --- /task ---
 
 Add the code below and check that it works in the **Text output** tab.

@@ -8,6 +8,8 @@ Click the file icon in the project files window. Select **input.txt** to open it
 You can edit the file by typing into it, or you can leave it as it is.
 --- /task ---
 
+![screenshot of the project file tab with the input file open for editing](images/input-file.png)
+
 The code below reads the text from the file. Paste it into your project, then print the text to check it works.
 
 <div class="c-project-code">
