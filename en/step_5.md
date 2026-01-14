@@ -1,31 +1,14 @@
-<h2 class="c-project-heading--task">Encode the message</h2>
+<h2 class="c-project-heading--task">Encode text from a file</h2>
 --- task ---
-Create a function that can turn text into a secret message using the **atbash** code.
+Encode text from a file into a secret message using the **atbash** code.
 --- /task ---
  
-Before you start, **comment out** the print line you used for testing the code dictionary.
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 12
-line_highlights: 15
----
-    for i in range(len(alphabet)):
-        code[alphabet[i]] = backwards[i]  # Match letters
-  
-   # print(code)
+--- task ---
+Click the file icon in the project files window. Select **input.txt** to open it in a new tab.
+You can edit the file by typing into it, or you can leave it as it is.
+--- /task ---
 
---- /code ---
-</div>
-
-<h2 class="c-project-heading--explainer">Make an atbash function</h2>
-
-Find the comment that says `# Encode/decode a piece of text — atbash is symmetrical`. 
-
-Under the comment, add the code below to define `atbash`, change the text to lower case, and create an output.
+The code below reads the text from the file. Paste it into your project, then print the text to check it works.
 
 <div class="c-project-code">
 --- code ---
@@ -33,82 +16,30 @@ Under the comment, add the code below to define `atbash`, change the text to low
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 23
-line_highlights: 24-26
+line_number_start: 22
+line_highlights: 24-32
 ---
-# Encode/decode a piece of text — atbash is symmetrical
-def atbash(text): 
-    text = text.lower() # make lower case 
-    output = '' # Store secret message
+print(atbash('hello world')) # print to check that it works
+
+# Create the get_text function
+def get_text(filename):
+    with open(filename) as f: # open the file
+        text = f.read().replace('\n','')  # read file and replace newline
+
+    return text # Return the text
+
+print(get_text('input.txt')) # print to check that it works
+print(atbash(get_text('input.txt'))) # print to check that it works
 
 --- /code ---
+--- task ---
+**Test:** Run your code. You should see two lines of output.
+The first line is the text from the file.
+The second line is the encoded message.
+--- /task---
 </div>
-
-<h2 class="c-project-heading--explainer">Encode your text</h2>
-
-Add `loop` below to swap each letter for its secret letter. Check that your indentation is correct.
-
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 23
-line_highlights: 28-32
----
-# Encode/decode a piece of text — atbash is symmetrical
-def atbash(text): 
-    text = text.lower() # make lower case 
-    output = '' # Store secret message
-
-    for letter in text:
-        if letter in code:
-            output += code[letter] # Swap each letter
-
-    return output
---- /code ---
-</div>
-
-<h2 class="c-project-heading--explainer">Test and debug</h2>
-
-Find the `# Start up` comment and add the `print()` line to test your code.
-
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 40
-line_highlights: 43
----
-# Start up
-def main():
-    create_code()
-    print(atbash('Test'))
-
-main()
---- /code ---
-</div>
-
-**Test:** Run your code. You should see `gvhg`. 
 
 <div class="c-project-output">
-<pre>gvhg</pre>
-</div>
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-
-To change the output, replace `'Test'` with another word.
-</div>
-
-<div class="c-project-callout c-project-callout--debug">
-
-### Debugging
-If you see a message about an indentation error:
-- Check that you have indented all of your code correctly
-- Look back at the sample code on this page to help you check
+<pre>hello this is a test</pre>
+<pre>svool gsrh rh z gvhg</pre>
 </div>

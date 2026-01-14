@@ -12,4 +12,4 @@ You can then display the letter frequency in a bar chart, which shows how often 
 </iframe>
 </div>
 
-Click **run** this program twice to explore the finished project.
+Click **run** to explore the finished project.

@@ -1,9 +1,10 @@
-<h2 class="c-project-heading--task">Reverse the alphabet</h2>
+<h2 class="c-project-heading--task">Create a dictionary</h2>
 --- task ---
-Make a new list where the alphabet is reversed.
+Create a dictionary that maps each letter in `alphabet` to the matching letter in `backwards`.
+--- /task ---.
 --- /task ---
 
-Under the next comment that says `# Create the atbash code by reversing the alphabet` add the code below.
+Add the code below and check that it works in the **Text output** tab.
 
 <div class="c-project-code">
 --- code ---
@@ -11,14 +12,24 @@ Under the next comment that says `# Create the atbash code by reversing the alph
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 8
-line_highlights: 9-13
+line_number_start: 1
+line_highlights: 8-9
 ---
-# Create the atbash code by reversing the alphabet
-def create_code():
-    backwards = list(reversed(alphabet))  # Reverse alphabet
+from pygal import Bar
+from frequency import english
 
-    for i in range(len(alphabet)):
-        code[alphabet[i]] = backwards[i]  # Match letters
+alphabet = ' abcdefghijklmnopqrstuvwxyz '
+backwards = alphabet[::-1]
+print(alphabet) # print to check that it works
+
+code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dictionary to map the letters
+print(code) # print to check that it works
 --- /code ---
+--- task ---
+**Test:** Run your code. You should see that the alphabet is reversed.  
+For example, **a** matches **z**, and **b** matches **y**.
+</div>
+
+<div class="c-project-output">
+<pre>{' ': ' ', 'a': 'z', 'b': 'y', 'c': 'x', 'd': 'w', 'e': 'v', 'f': 'u', 'g': 't', 'h': 's', 'i': 'r', 'j': 'q', 'k': 'p', 'l': 'o', 'm': 'n', 'n': 'm', 'o': 'l', 'p': 'k', 'q': 'j', 'r': 'i', 's': 'h', 't': 'g', 'u': 'f', 'v': 'e', 'w': 'd', 'x': 'c', 'y': 'b', 'z': 'a'}</pre>
 </div>

@@ -1,12 +1,13 @@
-<h2 class="c-project-heading--task">Set up code</h2>
+<h2 class="c-project-heading--task">Reverse text</h2>
 --- task ---
-Set up the list and code functions.
+Print the alphabet and then reverse it.
 --- /task ---
 
-<h2 class="c-project-heading--explainer">Encode the alphabet</h2>
-To start, find the comment that says `# Set things up`.
+<h2 class="c-project-heading--explainer">Write and reverse the alphabet</h2>
 
-Add the Python code below to turn `alphabet` into a list of letters. You will add to `code = {}` later.
+Add the Python code below to create `alphabet` and `backwards`.
+
+The code uses `[::-1]` to reverse the text.
 
 <div class="c-project-code">
 --- code ---
@@ -14,19 +15,38 @@ Add the Python code below to turn `alphabet` into a list of letters. You will ad
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 4 
-line_highlights: 5-6
+line_number_start: 1
+line_highlights: 4-6
 ---
-# Set things up
-alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # Make a list of letters
-code = {} 
+from pygal import Bar
+from frequency import english
+
+alphabet = ' abcdefghijklmnopqrstuvwxyz '
+backwards = alphabet[::-1]
+print(alphabet) # print to check that it works
 --- /code ---
+--- task ---
+**Test:** Run the code. You should see the alphabet printed.  
+Try printing `backwards` to see it in reverse.
+--- /task ---
+</div>
+
+<div class="c-project-output">
+abcdefghijklmnopqrstuvwxyz
 </div>
 
 <div class="c-project-callout c-project-callout--tip">
 
 ### Tip
-The `alphabet` list has spaces at the beginning and end so the spaces in the message stay the same.
-Very strong secret codes would not do this, because it makes messages easier to figure out.
-The spaces are kept here to make the messages easier to read.
+Two libraries are already imported: pygal and frequency. They are included at the top of the code.
 </div>
+
+
+
+
+
+
+
+
+
+

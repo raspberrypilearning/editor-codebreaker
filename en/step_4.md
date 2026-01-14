@@ -1,30 +1,16 @@
-<h2 class="c-project-heading--task">Start the program</h2>
+<h2 class="c-project-heading--task">Make a secret code</h2>
 --- task ---
-Create a `main()` function to run the other parts of your program when it starts.
+Use a function to turn text into a secret message.
 --- /task ---
 
-Under the the `# Start up` comment, add the code below. 
+<div class="c-project-callout c-project-callout--tip">
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 30
-line_highlights: 31-34
----
-# Start up
-def main():
-    create_code()
-
-main()
---- /code ---
+### Tip
+- Atbash makes the secret code.
+- It uese the swapped letters to create new words
 </div>
 
-Now add `print` so you can check that your code works.
-
-In the `# Create the atbash code by reversing the alphabet` code, add the following line:
+Under the the `print(code)` line, add the code below. 
 
 <div class="c-project-code">
 --- code ---
@@ -33,35 +19,33 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 8
-line_highlights: 15
+line_highlights: 11-22
 ---
-# Create the atbash code by reversing the alphabet
-def create_code():
-    backwards = list(reversed(alphabet))  # Reverse alphabet
+code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dictionary to map the letters
+print(code) # print to check that it works
 
-    for i in range(len(alphabet)):
-        code[alphabet[i]] = backwards[i]  # Match letters
+# create the atbash function
+def atbash(text):
+    text = text.lower() # make lower case
+    output = '' # Store secret message
 
-    print(code)
+    for letter in text:
+        if letter in code:
+            output += code[letter] # Swap each letter
+
+    return output
+
+print(atbash('hello world'))
 --- /code ---
+--- task ---
+**Test:** Run your code. You should see that `'hello world'` has been encoded.
+--- /task---
 </div>
-
-**Test:** Run your code. You should see a pattern where the alphabet is revered - a matches with z, and b matches with y.
 
 <div class="c-project-output">
-<pre>{' ': ' ', 'a': 'z', 'b': 'y', 'c': 'x', 'd': 'w', 'e': 'v', 'f': 'u', 'g': 't', 'h': 's', 'i': 'r', 'j': 'q', 'k': 'p', 'l': 'o', 'm': 'n', 'n': 'm', 'o': 'l', 'p': 'k', 'q': 'j', 'r': 'i', 's': 'h', 't': 'g', 'u': 'f', 'v': 'e', 'w': 'd', 'x': 'c', 'y': 'b', 'z': 'a'}</pre>
+<pre>svool dliow</pre>
 </div>
 
-<div class="c-project-callout c-project-callout--debug">
-
-### Debugging
-If nothing appears on the screen:
-- Check that print(code) is indented inside the create_code function
-- Check that both create_code() and main() are written exactly as shown
-
-If you see a message saying code is not defined make sure you created the code dictionary in earlier steps.
-
-If you see an indentation error:
-- Check that all lines are indented correctly
-- Compare your code with the example above
-</div>
+--- task ---
+Try changing `'hello world'` to a different message. Make sure you use `'` around the text.
+--- /task ---
