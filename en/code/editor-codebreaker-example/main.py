@@ -23,8 +23,8 @@ def get_text(filename):
         text = f.read().replace('\n','')  # read file and replace newline
 
     return text # Return the text
-
-# Step 6 or maybe 6 and 7. You decide if this need breaking up. They can call this with a print(frequency(get_text('input.txt'))) to see the frequency analysis output, but they'd have to have the line ABOVE where the while loop starts below.
+    
+# frequency analysis 
 def frequency(text):
     text = text.lower()
     total = len(text) or 1
@@ -57,6 +57,5 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
         print('Analysing message…')
         message = get_text('input.txt')
         message_freq = frequency(message)
-        #print(message_freq)
         lang_freq = english  # Import the English frequency dictionary
         make_chart(message_freq, lang_freq)  # Call the function to make a chart        
