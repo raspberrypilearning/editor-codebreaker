@@ -16,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 44
-line_highlights: 46-51, 71
+line_highlights: 46-51, 70
 ---
 print(frequency(get_text('input.txt'))) # print to check that it works
 
@@ -43,7 +43,6 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
         print('Analysing message…')
         message = get_text('input.txt')
         message_freq = frequency(message)
-        #print(message_freq)
         lang_freq = english  # Import the English frequency dictionary
         make_chart(message_freq, lang_freq)  # Call the function to make a chart        
 --- /code ---

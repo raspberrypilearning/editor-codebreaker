@@ -44,7 +44,6 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
         print('Analysing message…')
         message = get_text('input.txt')
         message_freq = frequency(message)
-        #print(message_freq)
         lang_freq = english  # Import the English frequency dictionary
 
 --- /code ---
