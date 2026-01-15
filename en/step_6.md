@@ -3,10 +3,19 @@
 Asks your user to make choices about what they would like to do. If the user enters `e`, the message is encoded.
 --- /task ---
  
+--- task ---
 Paste the code below into your project.
+--- /task ---
 
-This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.  
-If the user enters `e`, the message is encoded. `f` is used later.
+<div class="c-project-callout c-project-callout--tip">
+
+### Code explainer
+
+- This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.  
+- If the user enters `e`, the message is encoded. 
+- `f` is used later.
+
+</div>
 
 <div class="c-project-code">
 --- code ---
@@ -15,7 +24,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 32
-line_highlights: 34-44
+line_highlights: 34-51
 ---
 print(atbash(get_text('input.txt'))) # print to check that it works
 
@@ -49,7 +58,7 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
 </div>
 
 --- task ---
-Type `e` and press Enter to encode your message.
+Type `e` and press enter to encode your message.
 --- /task---
 
 <div class="c-project-output">

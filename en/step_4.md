@@ -3,7 +3,9 @@
 Use a function to turn text into a secret message.
 --- /task ---
 
+--- task ---
 Under the the `print(code)` line, add the code below. 
+--- /task --- 
 
 <div class="c-project-code">
 --- code ---

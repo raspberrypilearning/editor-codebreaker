@@ -3,9 +3,11 @@
 Print the alphabet and then reverse it.
 --- /task ---
 
+--- task ---
 Add the Python code below to create `alphabet` and `backwards`.
 
 The code uses `[::-1]` to reverse the text.
+--- /task ---
 
 <div class="c-project-code">
 --- code ---

@@ -9,7 +9,9 @@ Write a function that works out how often each letter appears in your text.
 **Frequency analysis** counts how often something appears, so you can spot patterns in that data.
 </div>
 
+--- task ---
 Copy the function below into your code above the `# User input` comment. This code turns the letter counts into a percentage of the whole message.
+--- /task ---
 
 <div class="c-project-code">
 --- code ---

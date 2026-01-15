@@ -3,7 +3,9 @@
 Create a dictionary that maps each letter in `alphabet` to the matching letter in `backwards`.
 --- /task ---
 
+--- task ---
 Add the code below and check that it works in the **Text output** tab.
+--- /task ---
 
 <div class="c-project-code">
 --- code ---

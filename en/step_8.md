@@ -1,9 +1,13 @@
 <h2 class="c-project-heading--task">Create a chart</h2>
 --- task ---
-Make a bar chart to visualise the letter frequency
+Make a bar chart to show the letter frequency
 --- /task ---
 
-Add the code under the `frequency` function. You'll also need to add the `make chart` at the end so that you can view the chart. 
+--- task ---
+Add the code under the `frequency` function. 
+
+You also need to add `make chart` at the end so the chart is created.
+--- /task ---
 
 <div class="c-project-code">
 --- code ---
@@ -52,8 +56,10 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
 <pre>Enter e to encode/decode text, or f for frequency analysis: </pre>
 </div>
 
-Type `f` and press **Enter**. Switch to the Visual output tab to see the chart.
-
+--- task ---
+Type `f` and press Enter.  
+Switch to the **Visual output** tab to see the chart.
+--- /task ---
 
 <div class="c-project-output">
 ![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message.](images/frequency-analysis.PNG)
@@ -64,5 +70,5 @@ Type `f` and press **Enter**. Switch to the Visual output tab to see the chart.
 
 ### Tip
 
-To see different encoded messages edit the text in the `input.txt` file and run your code again.
+To see a different chart, edit the text in `input.txt` and run your code again.
 </tip>
