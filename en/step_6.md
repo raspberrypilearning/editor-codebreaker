@@ -24,7 +24,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 32
-line_highlights: 34-51
+line_highlights: 34-50
 ---
 print(atbash(get_text('input.txt'))) # print to check that it works
 
