@@ -42,6 +42,8 @@ The second line is the encoded message.
 </div>
 
 <div class="c-project-output">
-<pre>hello this is a test</pre>
+<pre>hello this is a test</pre><br>
 <pre>svool gsrh rh z gvhg</pre>
 </div>
+
+

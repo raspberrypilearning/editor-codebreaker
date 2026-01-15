@@ -3,11 +3,6 @@
 Code a frequency analyser function to work out how often each letter of the alphabet appears in your text
 --- /task --- 
 
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-**Frequency analysis** measures how often something appears so you can look for patterns in that data.
-</div>
 
 Beneath the `# Calculate the frequency of all letters in a piece of text` comment add the code below. 
 

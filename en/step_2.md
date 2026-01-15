@@ -27,7 +27,7 @@ print(alphabet) # print to check that it works
 --- /code ---
 --- task ---
 **Test:** Run the code. You should see the alphabet printed.  
-Try printing `backwards` to see it in reverse.
+Try printing **backwards** to see it in reverse.
 --- /task ---
 </div>
 

@@ -3,13 +3,6 @@
 Use a function to turn text into a secret message.
 --- /task ---
 
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-- Atbash makes the secret code.
-- It uese the swapped letters to create new words
-</div>
-
 Under the the `print(code)` line, add the code below. 
 
 <div class="c-project-code">
@@ -49,3 +42,10 @@ print(atbash('hello world'))
 --- task ---
 Try changing `'hello world'` to a different message. Make sure you use `'` around the text.
 --- /task ---
+
+<div class="c-project-callout c-project-callout--tip">
+
+### What is Atbash?
+- Atbash makes the secret code.
+- It uese the swapped letters from the dictionary to create new words
+</div>

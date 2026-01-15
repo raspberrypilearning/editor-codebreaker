@@ -1,9 +1,12 @@
-<h2 class="c-project-heading--task">Create a menu</h2>
+<h2 class="c-project-heading--task">Get user input</h2>
 --- task ---
-Create a menu that asks your user to make choices about what they would like to do.
+Asks your user to make choices about what they would like to do. If the user enters `e`, the message is encoded.
 --- /task ---
+ 
+Paste the code below into your project.
 
-Before you start **comment out** `print(atbash('Test'))` in `main()`. 
+This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.  
+If the user enters `e`, the message is encoded. `f` is used later.
 
 <div class="c-project-code">
 --- code ---
@@ -11,52 +14,45 @@ Before you start **comment out** `print(atbash('Test'))` in `main()`.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 40
-line_highlights: 43
+line_number_start: 32
+line_highlights: 34-44
 ---
-# Start up
-def main():
-    create_code()
-    # print(atbash('Test'))
+print(atbash(get_text('input.txt'))) # print to check that it works
 
-main()
+# user input
+choice = ''  # Start with a wrong answer for choice.
+
+while choice != 'e' and choice != 'f':  # Asking for the right answer
+    choice = input('Enter e to encode text, or f for frequency analysis: ')
+
+    if choice == 'e':
+        print('Running your message through the cypher…')
+        message = get_text('longer.txt')  # Take input from a file
+        cyphertext = atbash(message)
+        print(cyphertext)
+
+    elif choice == 'f':
+        print('Analysing message…')
+        message = get_text('input.txt')
+        message_freq = frequency(message)
+        #print(message_freq)
+        lang_freq = english  # Import the English frequency dictionary
+
 --- /code ---
+--- task ---
+**Test:** Run your code. You should see a message asking for your choice.
+--- /task---
 </div>
 
-**Find** the `# Create a text-based menu system` comment. Under this define a function called `menu()` and create a new variable called `choice`.
-
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py 
-line_numbers: true
-line_number_start: 37
-line_highlights: 38-39
----
-# Create a text-based menu system  
-def menu():
-    choice = '' # Wrong answer
-
---- /code ---
+<div class="c-project-output">
+<pre>Enter e to encode/decode text, or f for frequency analysis: </pre>
 </div>
 
-Create a **while loop** that runs as long as your answer **DOES NOT** match one you have defined. As long as the user **does not** choose `c` or `f`, the loop will continue to run. 
+--- task ---
+Type `e` and press Enter to encode your message.
+--- /task---
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py 
-line_numbers: true
-line_number_start: 37
-line_highlights: 41-42
----
-# Create a text-based menu system  
-def menu():
-    choice = ''  # Wrong answer
-
-    while choice != 'c' and choice != 'f':  # Asking for the right answer
-        choice = input('Enter c to encode/decode text, or f for frequency analysis: ')
---- /code ---
+<div class="c-project-output">
+<pre>Running your message through the cypher…
+gsrh rh olmtvi gvcg</pre>
 </div>
