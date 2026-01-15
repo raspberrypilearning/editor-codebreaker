@@ -12,4 +12,6 @@ You can then display the letter frequency in a bar chart, which shows how often 
 </iframe>
 </div>
 
+--- task ---
 Click **run** to explore the finished project.
+--- /task ---

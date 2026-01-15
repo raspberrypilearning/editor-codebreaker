@@ -3,8 +3,6 @@
 Print the alphabet and then reverse it.
 --- /task ---
 
-<h2 class="c-project-heading--explainer">Write and reverse the alphabet</h2>
-
 Add the Python code below to create `alphabet` and `backwards`.
 
 The code uses `[::-1]` to reverse the text.
@@ -38,7 +36,7 @@ abcdefghijklmnopqrstuvwxyz
 <div class="c-project-callout c-project-callout--tip">
 
 ### Tip
-Two libraries are already imported: pygal and frequency. They are included at the top of the code.
+Two libraries are already imported into your project: `pygal` and `frequency`. You can see them at the top of your code.
 </div>
 
 

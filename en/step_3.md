@@ -26,6 +26,7 @@ print(code) # print to check that it works
 --- /code ---
 --- task ---
 **Test:** Run your code. You should see that the alphabet is reversed.  
+
 For example, **a** matches **z**, and **b** matches **y**.
 --- /task ---
 </div>

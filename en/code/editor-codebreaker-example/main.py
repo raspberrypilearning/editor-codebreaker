@@ -1,100 +1,71 @@
-#!/bin/python3
 from pygal import Bar
 from frequency import english
 
-# Set up data structures
-alphabet = list(' abcdefghijklmnopqrstuvwxyz ')  # List from a string
-code = {}
+alphabet = ' abcdefghijklmnopqrstuvwxyz '
+backwards = alphabet[::-1]
+print(alphabet) # print to check that it works
 
-# Create the atbash code by reversing the alphabet
-def create_code():
-    backwards = list(reversed(alphabet))  # Reverses a list
+code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dictionary to map the letters
+print(code) # print to check that it works
 
-    for i in range(len(alphabet)):  # Gets the length of a list
-        # Populate the code dictionary with a letter of the alphabet and its encoded letter
-        code[alphabet[i]] = backwards[i]
-
-    # print(code)
-
-# Calculate the frequency of all letters in a piece of text
-def frequency(text):
-    # Convert the message to lower case and make it a list
-    text = list(text.lower())
-
-    freq = {}  # Create a dictionary of every letter, with a count of 0
-    for letter in alphabet:
-        freq[letter] = 0
-
-    total_letters = len(text)  # Count the letters in the message
-
-    for letter in text:
-        if letter in freq:
-            freq[letter] += 1
-
-    for letter in freq:
-        freq[letter] = freq[letter] / total_letters * \
-            100  # Convert from counts to percentages
-
-    return freq
-
-# Make frequency chart
-def make_chart(text, language):
-    chart = Bar(width=800, height=400, title='Frequency analysis',
-                x_labels=list(text.keys()))
-    # Label the frequency data for the encoded message
-    chart.add('Target message', list(text.values()))
-    # Label the frequency data for the language
-    chart.add('Language', list(language.values()))
-
-    chart.render()
-
-# Encode/decode a piece of text — atbash is symetrical
+# atbash function creates the secret code
 def atbash(text):
-    text = text.lower()  #  Converts text to lower case
-    output = ''
+    text = text.lower() # make lower case
+    output = '' # Store secret message
 
     for letter in text:
         if letter in code:
-            # Populates output with the encoded/decoded message using the dictionary
-            output += code[letter]
+            output += code[letter] # Swap each letter
 
-    return output  # Return the encoded/decoded message
+    return output
+    
+print(atbash('hello world')) # print to check that it works
 
-# Fetch and return text from a file
+# get_text function
 def get_text(filename):
-    with open(filename) as f:
-        text = f.read().replace('\n', '')  # Need to strip the newline characters
+    with open(filename) as f: # open the file
+        text = f.read().replace('\n','')  # read file and replace newline
 
-    return text
+    return text # Return the text
 
-# Create a text-based menu system
-def menu():
-    choice = ''  # Start with a wrong answer for choice.
+print(get_text('input.txt')) # print to check that it works
+print(atbash(get_text('input.txt'))) # print to check that it works
 
-    while choice != 'c' and choice != 'f':  # Keep asking the user for the right answer
-        choice = input(
-            'Please enter c to encode/decode text, or f to perform frequency analysis: ')
+# Step 6 or maybe 6 and 7. You decide if this need breaking up. They can call this with a print(frequency(get_text('input.txt'))) to see the frequency analysis output, but they'd have to have the line ABOVE where the while loop starts below.
+def frequency(text):
+    text = text.lower()
+    total = len(text) or 1
+    freq = {ch: 0 for ch in alphabet} #Note to Becca - changed to a dictionary comprehension so it creates a dict with each letter mapped to 0
+    for ch in text:
+        if ch in freq:
+            freq[ch] += 1
+    return {ch: freq[ch] / total * 100 for ch in alphabet} #Note to Becca - this is another dict comprehension but does the percentage calculation.
 
-    if choice == 'c':
+print(frequency(get_text('input.txt'))) # print to check that it works
+
+# Create the chart 
+def make_chart(text, language):
+    chart = Bar(width=800, height=400, title='Frequency analysis', x_labels = list(text.keys())) # Make a bar chart
+    chart.add('Target message', list(text.values()))  # Label the frequency data for the encoded message
+    chart.add('Language', list(language.values()))  # Label the frequency data for the language
+    chart.render() #Render the chart
+
+# User input
+choice = ''  # Start with a wrong answer for choice.
+
+while choice != 'e' and choice != 'f':  # Asking for the right answer
+    choice = input('Enter e to encode text, or f for frequency analysis: ')
+
+    if choice == 'e':
         print('Running your message through the cypher…')
         message = get_text('longer.txt')  # Take input from a file
-        code = atbash(message)
-        print(code)
-
+        cyphertext = atbash(message)
+        print(cyphertext)
+    
     elif choice == 'f':
         print('Analysing message…')
-        message = get_text('longer.txt')
+        message = get_text('input.txt')
         message_freq = frequency(message)
-        # print(message_freq)
+        #print(message_freq)
         lang_freq = english  # Import the English frequency dictionary
-        # Call the function to make a chart
-        make_chart(message_freq, lang_freq)
-
-# Start up
-def main():
-    create_code()
-    # print(atbash('Test'))
-    menu()
-
-
-main()
+        make_chart(message_freq, lang_freq)  # Call the function to make a chart        
