@@ -3,10 +3,8 @@ from frequency import english
 
 alphabet = ' abcdefghijklmnopqrstuvwxyz '
 backwards = alphabet[::-1]
-print(alphabet) # print to check that it works
 
 code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dictionary to map the letters
-print(code) # print to check that it works
 
 # atbash function creates the secret code
 def atbash(text):
@@ -18,8 +16,6 @@ def atbash(text):
             output += code[letter] # Swap each letter
 
     return output
-    
-print(atbash('hello world')) # print to check that it works
 
 # get_text function
 def get_text(filename):
@@ -27,9 +23,6 @@ def get_text(filename):
         text = f.read().replace('\n','')  # read file and replace newline
 
     return text # Return the text
-
-print(get_text('input.txt')) # print to check that it works
-print(atbash(get_text('input.txt'))) # print to check that it works
 
 # Step 6 or maybe 6 and 7. You decide if this need breaking up. They can call this with a print(frequency(get_text('input.txt'))) to see the frequency analysis output, but they'd have to have the line ABOVE where the while loop starts below.
 def frequency(text):
@@ -40,8 +33,6 @@ def frequency(text):
         if ch in freq:
             freq[ch] += 1
     return {ch: freq[ch] / total * 100 for ch in alphabet} #Note to Becca - this is another dict comprehension but does the percentage calculation.
-
-print(frequency(get_text('input.txt'))) # print to check that it works
 
 # Create the chart 
 def make_chart(text, language):
