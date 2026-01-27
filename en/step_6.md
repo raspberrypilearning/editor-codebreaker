@@ -1,10 +1,14 @@
 <h2 class="c-project-heading--task">Get user input</h2>
 --- task ---
+
 Asks your user to make choices about what they would like to do. If the user enters `e`, the message is encoded.
+
 --- /task ---
  
 --- task ---
+
 Paste the code below into your project.
+
 --- /task ---
 
 <div class="c-project-callout c-project-callout--tip">
@@ -48,8 +52,10 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
 
 --- /code ---
 --- task ---
+
 **Test:** Run your code. You should see a message asking for your choice.
---- /task---
+
+--- /task ---
 </div>
 
 <div class="c-project-output">
@@ -57,8 +63,10 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
 </div>
 
 --- task ---
+
 Type `e` and press enter to encode your message.
---- /task---
+
+--- /task ---
 
 <div class="c-project-output">
 <pre>Running your message through the cypher…

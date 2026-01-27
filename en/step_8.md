@@ -1,12 +1,16 @@
 <h2 class="c-project-heading--task">Create a chart</h2>
 --- task ---
+
 Make a bar chart to show the letter frequency
+
 --- /task ---
 
 --- task ---
+
 Add the code under the `frequency` function. 
 
 You also need to add `make chart` at the end so the chart is created.
+
 --- /task ---
 
 <div class="c-project-code">
@@ -47,6 +51,7 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
         make_chart(message_freq, lang_freq)  # Call the function to make a chart        
 --- /code ---
 --- task ---
+
 **Test:** Run your code to see the user prompt. 
 --- /task ---
 </div>
@@ -58,6 +63,7 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
 --- task ---
 Type `f` and press Enter.  
 Switch to the **Visual output** tab to see the chart.
+
 --- /task ---
 
 <div class="c-project-output">
@@ -70,4 +76,5 @@ Switch to the **Visual output** tab to see the chart.
 ### Tip
 
 To see a different chart, edit the text in `input.txt` and run your code again.
+
 </tip>

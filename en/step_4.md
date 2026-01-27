@@ -1,13 +1,16 @@
 <h2 class="c-project-heading--task">Make a secret code</h2>
 --- task ---
+
 Use a function to turn text into a secret message.
+
 --- /task ---
 
 --- task ---
+
 Under the the `print(code)` line, add the code below. 
+
 --- /task --- 
 
-<div class="c-project-code">
 --- code ---
 ---
 language: python
@@ -33,8 +36,10 @@ def atbash(text):
 print(atbash('hello world'))
 --- /code ---
 --- task ---
+
 **Test:** Run your code. You should see that `'hello world'` has been encoded.
---- /task---
+
+--- /task ---
 </div>
 
 <div class="c-project-output">
@@ -42,7 +47,9 @@ print(atbash('hello world'))
 </div>
 
 --- task ---
+
 Try changing `'hello world'` to a different message. Make sure you use `'` around the text.
+
 --- /task ---
 
 <div class="c-project-callout c-project-callout--tip">

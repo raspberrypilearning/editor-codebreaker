@@ -1,10 +1,14 @@
 <h2 class="c-project-heading--task">Create a dictionary</h2>
 --- task ---
+
 Create a dictionary that maps each letter in `alphabet` to the matching letter in `backwards`.
+
 --- /task ---
 
 --- task ---
+
 Add the code below and check that it works in the **Text output** tab.
+
 --- /task ---
 
 <div class="c-project-code">
@@ -27,9 +31,11 @@ code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dict
 print(code) # print to check that it works
 --- /code ---
 --- task ---
+
 **Test:** Run your code. You should see that the alphabet is reversed.  
 
 For example, **a** matches **z**, and **b** matches **y**.
+
 --- /task ---
 </div>
 

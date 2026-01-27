@@ -1,11 +1,15 @@
 <h2 class="c-project-heading--task">Encode text from a file</h2>
 --- task ---
+
 Encode text from a file into a secret message using the **atbash** code.
+
 --- /task ---
  
 --- task ---
+
 Click the file icon in the project files window. Select **input.txt** to open it in a new tab.
 You can edit the file by typing into it, or you can leave it as it is.
+
 --- /task ---
 
 ![screenshot of the project file tab with the input file open for editing](images/input-file.png)
@@ -35,10 +39,12 @@ print(atbash(get_text('input.txt'))) # print to check that it works
 
 --- /code ---
 --- task ---
+
 **Test:** Run your code. You should see two lines of output.
 The first line is the text from the file.
 The second line is the encoded message.
---- /task---
+
+--- /task ---
 </div>
 
 <div class="c-project-output">

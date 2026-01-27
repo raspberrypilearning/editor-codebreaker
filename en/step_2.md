@@ -1,12 +1,16 @@
 <h2 class="c-project-heading--task">Reverse text</h2>
 --- task ---
+
 Print the alphabet and then reverse it.
+
 --- /task ---
 
 --- task ---
+
 Add the Python code below to create `alphabet` and `backwards`.
 
 The code uses `[::-1]` to reverse the text.
+
 --- /task ---
 
 <div class="c-project-code">
@@ -26,8 +30,10 @@ backwards = alphabet[::-1]
 print(alphabet) # print to check that it works
 --- /code ---
 --- task ---
+
 **Test:** Run the code. You should see the alphabet printed.  
 Try printing **backwards** to see it in reverse.
+
 --- /task ---
 </div>
 

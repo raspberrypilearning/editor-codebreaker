@@ -1,6 +1,8 @@
 <h2 class="c-project-heading--task">Create a frequency analyser</h2>
 --- task ---
+
 Write a function that works out how often each letter appears in your text.
+
 --- /task ---
 
 <div class="c-project-callout c-project-callout--tip">
@@ -10,7 +12,9 @@ Write a function that works out how often each letter appears in your text.
 </div>
 
 --- task ---
+
 Copy the function below into your code above the `# User input` comment. This code turns the letter counts into a percentage of the whole message.
+
 --- /task ---
 
 <div class="c-project-code">
@@ -42,9 +46,11 @@ print(frequency(get_text('input.txt'))) # print to check that it works
 choice = ''  # Start with a wrong answer for choice.
 --- /code ---
 --- task ---
+
 **Test:** Run your code. You should see a list of numbers. These numbers are the percentage of the message made up by each letter.
 Try editing the text in `input.txt` and run the code again to see the percentage change.
---- /task---
+
+--- /task ---
 </div>
 
 <div class="c-project-output">
