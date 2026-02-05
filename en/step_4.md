@@ -11,6 +11,7 @@ Under the the `print(code)` line, add the code below.
 
 --- /task --- 
 
+<div class="c-project-code">
 --- code ---
 ---
 language: python
