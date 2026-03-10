@@ -30,6 +30,7 @@ print(alphabet) # print to check that it works
 code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dictionary to map the letters
 print(code) # print to check that it works
 --- /code ---
+</div>
 --- task ---
 
 **Test:** Run your code. You should see that the alphabet is reversed.  
@@ -37,7 +38,6 @@ print(code) # print to check that it works
 For example, **a** matches **z**, and **b** matches **y**.
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 <pre>{' ': ' ', 'a': 'z', 'b': 'y', 'c': 'x', 'd': 'w', 'e': 'v', 'f': 'u', 'g': 't', 'h': 's', 'i': 'r', 'j': 'q', 'k': 'p', 'l': 'o', 'm': 'n', 'n': 'm', 'o': 'l', 'p': 'k', 'q': 'j', 'r': 'i', 's': 'h', 't': 'g', 'u': 'f', 'v': 'e', 'w': 'd', 'x': 'c', 'y': 'b', 'z': 'a'}</pre>

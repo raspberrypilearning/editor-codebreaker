@@ -51,12 +51,12 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
         lang_freq = english  # Import the English frequency dictionary
 
 --- /code ---
+</div>
 --- task ---
 
 **Test:** Run your code. You should see a message asking for your choice.
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 <pre>Enter e to encode/decode text, or f for frequency analysis: </pre>

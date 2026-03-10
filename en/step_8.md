@@ -50,11 +50,11 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
         lang_freq = english  # Import the English frequency dictionary
         make_chart(message_freq, lang_freq)  # Call the function to make a chart        
 --- /code ---
+</div>
 --- task ---
 
 **Test:** Run your code to see the user prompt. 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 <pre>Enter e to encode/decode text, or f for frequency analysis: </pre>

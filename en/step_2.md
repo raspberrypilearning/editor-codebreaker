@@ -29,13 +29,13 @@ alphabet = ' abcdefghijklmnopqrstuvwxyz '
 backwards = alphabet[::-1]
 print(alphabet) # print to check that it works
 --- /code ---
+</div>
 --- task ---
 
 **Test:** Run the code. You should see the alphabet printed.  
 Try printing **backwards** to see it in reverse.
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 abcdefghijklmnopqrstuvwxyz
@@ -46,7 +46,6 @@ abcdefghijklmnopqrstuvwxyz
 ### Tip
 Two libraries are already imported into your project: `pygal` and `frequency`. You can see them at the top of your code.
 </div>
-
 
 
 

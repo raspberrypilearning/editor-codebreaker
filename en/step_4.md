@@ -36,12 +36,12 @@ def atbash(text):
 
 print(atbash('hello world'))
 --- /code ---
+</div>
 --- task ---
 
 **Test:** Run your code. You should see that `'hello world'` has been encoded.
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 <pre>svool dliow</pre>

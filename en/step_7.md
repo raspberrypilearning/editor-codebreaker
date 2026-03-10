@@ -45,13 +45,13 @@ print(frequency(get_text('input.txt'))) # print to check that it works
 # user input
 choice = ''  # Start with a wrong answer for choice.
 --- /code ---
+</div>
 --- task ---
 
 **Test:** Run your code. You should see a list of numbers. These numbers are the percentage of the message made up by each letter.
 Try editing the text in `input.txt` and run the code again to see the percentage change.
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 <pre>{' ': 20.0, 'a': 5.0, 'b': 0.0, 'c': 0.0, 'd': 0.0, 'e': 10.0, 'f': 0.0, 'g': 0.0, 'h': 10.0, 'i': 10.0, 'j': 0.0, 'k': 0.0, 'l': 10.0, 'm': 0.0, 'n': 0.0, 'o': 5.0, 'p': 0.0, 'q': 0.0, 'r': 0.0, 's': 15.0, 't': 15.0, 'u': 0.0, 'v': 0.0, 'w': 0.0, 'x': 0.0, 'y': 0.0, 'z': 0.0}</pre>

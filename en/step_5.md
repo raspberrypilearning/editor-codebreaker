@@ -38,6 +38,7 @@ print(get_text('input.txt')) # print to check that it works
 print(atbash(get_text('input.txt'))) # print to check that it works
 
 --- /code ---
+</div>
 --- task ---
 
 **Test:** Run your code. You should see two lines of output.
@@ -45,11 +46,9 @@ The first line is the text from the file.
 The second line is the encoded message.
 
 --- /task ---
-</div>
 
 <div class="c-project-output">
 <pre>hello this is a test</pre><br>
 <pre>svool gsrh rh z gvhg</pre>
 </div>
-
 
