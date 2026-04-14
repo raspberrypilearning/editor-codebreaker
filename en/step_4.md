@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Encode text from a file</h2>
+
 ### Step 1
 
 Encode text from a file into a secret message using the **atbash** code.

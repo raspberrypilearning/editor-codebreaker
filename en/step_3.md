@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Make a secret code</h2>
+
 ### Step 1
 
 Use a function to turn text into a secret message.

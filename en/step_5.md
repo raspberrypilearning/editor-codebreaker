@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Get user input</h2>
+
 ### Step 1
 
 Asks your user to make choices about what they would like to do. If the user enters `e`, the message is encoded.

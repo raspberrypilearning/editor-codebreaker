@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Challenge</h2>
+
 ### Step 1
 
 Upgrade your project!

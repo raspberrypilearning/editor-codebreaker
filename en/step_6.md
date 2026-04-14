@@ -1,4 +1,5 @@
 <h2 class="c-project-heading--task">Create a frequency analyser</h2>
+
 ### Step 1
 
 Write a function that works out how often each letter appears in your text.
