@@ -1,17 +1,13 @@
-<h2 class="c-project-heading--task">Reverse text</h2>
---- task ---
+<h2 class="c-project-heading--task">Create a dictionary</h2>
+### Step 1
 
-Print the alphabet and then reverse it.
+Create a dictionary that maps each letter in `alphabet` to the matching letter in `backwards`.
 
---- /task ---
 
---- task ---
+### Step 2
 
-Add the Python code below to create `alphabet` and `backwards`.
+Add the code below and check that it works in the **Text output** tab.
 
-The code uses `[::-1]` to reverse the text.
-
---- /task ---
 
 <div class="c-project-code">
 --- code ---
@@ -20,7 +16,7 @@ language: python
 filename: main.py
 line_numbers: true
 line_number_start: 1
-line_highlights: 4-6
+line_highlights: 8-9
 ---
 from pygal import Bar
 from frequency import english
@@ -28,30 +24,18 @@ from frequency import english
 alphabet = ' abcdefghijklmnopqrstuvwxyz '
 backwards = alphabet[::-1]
 print(alphabet) # print to check that it works
+
+code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dictionary to map the letters
+print(code) # print to check that it works
 --- /code ---
 </div>
---- task ---
+### Step 3
 
-**Test:** Run the code. You should see the alphabet printed.  
-Try printing **backwards** to see it in reverse.
+**Test:** Run your code. You should see that the alphabet is reversed.  
 
---- /task ---
+For example, **a** matches **z**, and **b** matches **y**.
+
 
 <div class="c-project-output">
-abcdefghijklmnopqrstuvwxyz
+<pre>{' ': ' ', 'a': 'z', 'b': 'y', 'c': 'x', 'd': 'w', 'e': 'v', 'f': 'u', 'g': 't', 'h': 's', 'i': 'r', 'j': 'q', 'k': 'p', 'l': 'o', 'm': 'n', 'n': 'm', 'o': 'l', 'p': 'k', 'q': 'j', 'r': 'i', 's': 'h', 't': 'g', 'u': 'f', 'v': 'e', 'w': 'd', 'x': 'c', 'y': 'b', 'z': 'a'}</pre>
 </div>
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Tip
-Two libraries are already imported into your project: `pygal` and `frequency`. You can see them at the top of your code.
-</div>
-
-
-
-
-
-
-
-
-

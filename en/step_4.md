@@ -1,15 +1,18 @@
-<h2 class="c-project-heading--task">Make a secret code</h2>
---- task ---
+<h2 class="c-project-heading--task">Encode text from a file</h2>
+### Step 1
 
-Use a function to turn text into a secret message.
+Encode text from a file into a secret message using the **atbash** code.
 
---- /task ---
+ 
+### Step 2
 
---- task ---
+Click the file icon in the project files window. Select **input.txt** to open it in a new tab.
+You can edit the file by typing into it, or you can leave it as it is.
 
-Under the the `print(code)` line, add the code below. 
 
---- /task --- 
+![screenshot of the project file tab with the input file open for editing](images/input-file.png)
+
+The code below reads the text from the file. Paste the code into your project, then print the text to check it works.
 
 <div class="c-project-code">
 --- code ---
@@ -17,45 +20,31 @@ Under the the `print(code)` line, add the code below.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 8
-line_highlights: 11-22
+line_number_start: 22
+line_highlights: 24-32
 ---
-code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dictionary to map the letters
-print(code) # print to check that it works
+print(atbash('hello world')) # print to check that it works
 
-# create the atbash function
-def atbash(text):
-    text = text.lower() # make lower case
-    output = '' # Store secret message
+# Create the get_text function
+def get_text(filename):
+    with open(filename) as f: # open the file
+        text = f.read().replace('\n','')  # read file and replace newline
 
-    for letter in text:
-        if letter in code:
-            output += code[letter] # Swap each letter
+    return text # Return the text
 
-    return output
+print(get_text('input.txt')) # print to check that it works
+print(atbash(get_text('input.txt'))) # print to check that it works
 
-print(atbash('hello world'))
 --- /code ---
 </div>
---- task ---
+### Step 3
 
-**Test:** Run your code. You should see that `'hello world'` has been encoded.
+**Test:** Run your code. You should see two lines of output.
+The first line is the text from the file.
+The second line is the encoded message.
 
---- /task ---
 
 <div class="c-project-output">
-<pre>svool dliow</pre>
-</div>
-
---- task ---
-
-Try changing `'hello world'` to a different message. Make sure you use `'` around the text.
-
---- /task ---
-
-<div class="c-project-callout c-project-callout--tip">
-
-### What is Atbash?
-- Atbash makes the secret code.
-- It uese the swapped letters from the dictionary to create new words
+<pre>hello this is a test</pre><br>
+<pre>svool gsrh rh z gvhg</pre>
 </div>

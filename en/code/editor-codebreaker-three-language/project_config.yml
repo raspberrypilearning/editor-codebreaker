@@ -1,3 +1,4 @@
 name: "Codebreaker: Three Language Atbash Encoder"
 identifier: "editor-codebreaker-three-language-encoder"
 type: 'python'
+build: true

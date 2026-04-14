@@ -1,21 +1,15 @@
-<h2 class="c-project-heading--task">Create a frequency analyser</h2>
---- task ---
+<h2 class="c-project-heading--task">Create a chart</h2>
+### Step 1
 
-Write a function that works out how often each letter appears in your text.
+Make a bar chart to show the letter frequency
 
---- /task ---
 
-<div class="c-project-callout c-project-callout--tip">
+### Step 2
 
-### Tip
-**Frequency analysis** counts how often something appears, so you can spot patterns in that data.
-</div>
+Add the code under the `frequency` function. 
 
---- task ---
+You also need to add `make chart` at the end so the chart is created.
 
-Copy the function below into your code above the `# User input` comment. This code turns the letter counts into a percentage of the whole message.
-
---- /task ---
 
 <div class="c-project-code">
 --- code ---
@@ -23,36 +17,60 @@ Copy the function below into your code above the `# User input` comment. This co
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 31
-line_highlights: 34-45
+line_number_start: 44
+line_highlights: 46-51, 70
 ---
-print(get_text('input.txt')) # print to check that it works
-print(atbash(get_text('input.txt'))) # print to check that it works
-
-# frequency analysis 
-def frequency(text):
-    text = text.lower()
-    total = len(text) or 1
-    freq = {ch: 0 for ch in alphabet} 
-    
-    for ch in text:
-        if ch in freq:
-            freq[ch] += 1
-    return {ch: freq[ch] / total * 100 for ch in alphabet} 
-
 print(frequency(get_text('input.txt'))) # print to check that it works
 
-# user input
+# Create the chart 
+def make_chart(text, language):
+    chart = Bar(width=800, height=400, title='Frequency analysis', x_labels = list(text.keys())) # Make a bar chart
+    chart.add('Target message', list(text.values()))  # Label the frequency data for the encoded message
+    chart.add('Language', list(language.values()))  # Label the frequency data for the language
+    chart.render() #Render the chart
+
+# User input
 choice = ''  # Start with a wrong answer for choice.
+
+while choice != 'e' and choice != 'f':  # Asking for the right answer
+    choice = input('Enter e to encode text, or f for frequency analysis: ')
+
+    if choice == 'e':
+        print('Running your message through the cypher…')
+        message = get_text('longer.txt')  # Take input from a file
+        cyphertext = atbash(message)
+        print(cyphertext)
+    
+    elif choice == 'f':
+        print('Analysing message…')
+        message = get_text('input.txt')
+        message_freq = frequency(message)
+        lang_freq = english  # Import the English frequency dictionary
+        make_chart(message_freq, lang_freq)  # Call the function to make a chart        
 --- /code ---
 </div>
---- task ---
+### Step 3
 
-**Test:** Run your code. You should see a list of numbers. These numbers are the percentage of the message made up by each letter.
-Try editing the text in `input.txt` and run the code again to see the percentage change.
-
---- /task ---
+**Test:** Run your code to see the user prompt. 
 
 <div class="c-project-output">
-<pre>{' ': 20.0, 'a': 5.0, 'b': 0.0, 'c': 0.0, 'd': 0.0, 'e': 10.0, 'f': 0.0, 'g': 0.0, 'h': 10.0, 'i': 10.0, 'j': 0.0, 'k': 0.0, 'l': 10.0, 'm': 0.0, 'n': 0.0, 'o': 5.0, 'p': 0.0, 'q': 0.0, 'r': 0.0, 's': 15.0, 't': 15.0, 'u': 0.0, 'v': 0.0, 'w': 0.0, 'x': 0.0, 'y': 0.0, 'z': 0.0}</pre>
+<pre>Enter e to encode/decode text, or f for frequency analysis: </pre>
 </div>
+
+### Step 4
+Type `f` and press Enter.  
+Switch to the **Visual output** tab to see the chart.
+
+
+<div class="c-project-output">
+![A bar chart showing the frequency of letters in the English language compared to the frequency of letters used in the encoded message.](images/frequency-analysis.PNG)
+</div>
+
+
+<div class="c-project-callout c-project-callout--tip">
+
+### Tip
+
+To see a different chart, edit the text in `input.txt` and run your code again.
+
+</tip>

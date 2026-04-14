@@ -1,20 +1,23 @@
-<h2 class="c-project-heading--task">Encode text from a file</h2>
---- task ---
+<h2 class="c-project-heading--task">Get user input</h2>
+### Step 1
 
-Encode text from a file into a secret message using the **atbash** code.
+Asks your user to make choices about what they would like to do. If the user enters `e`, the message is encoded.
 
---- /task ---
  
---- task ---
+### Step 2
 
-Click the file icon in the project files window. Select **input.txt** to open it in a new tab.
-You can edit the file by typing into it, or you can leave it as it is.
+Paste the code below into your project.
 
---- /task ---
 
-![screenshot of the project file tab with the input file open for editing](images/input-file.png)
+<div class="c-project-callout c-project-callout--tip">
 
-The code below reads the text from the file. Paste the code into your project, then print the text to check it works.
+### Code explainer
+
+- This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.  
+- If the user enters `e`, the message is encoded. 
+- `f` is used later.
+
+</div>
 
 <div class="c-project-code">
 --- code ---
@@ -22,33 +25,46 @@ The code below reads the text from the file. Paste the code into your project, t
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 22
-line_highlights: 24-32
+line_number_start: 32
+line_highlights: 34-50
 ---
-print(atbash('hello world')) # print to check that it works
-
-# Create the get_text function
-def get_text(filename):
-    with open(filename) as f: # open the file
-        text = f.read().replace('\n','')  # read file and replace newline
-
-    return text # Return the text
-
-print(get_text('input.txt')) # print to check that it works
 print(atbash(get_text('input.txt'))) # print to check that it works
+
+# user input
+choice = ''  # Start with a wrong answer for choice.
+
+while choice != 'e' and choice != 'f':  # Asking for the right answer
+    choice = input('Enter e to encode text, or f for frequency analysis: ')
+
+    if choice == 'e':
+        print('Running your message through the cypher…')
+        message = get_text('longer.txt')  # Take input from a file
+        cyphertext = atbash(message)
+        print(cyphertext)
+
+    elif choice == 'f':
+        print('Analysing message…')
+        message = get_text('input.txt')
+        message_freq = frequency(message)
+        lang_freq = english  # Import the English frequency dictionary
 
 --- /code ---
 </div>
---- task ---
+### Step 3
 
-**Test:** Run your code. You should see two lines of output.
-The first line is the text from the file.
-The second line is the encoded message.
+**Test:** Run your code. You should see a message asking for your choice.
 
---- /task ---
 
 <div class="c-project-output">
-<pre>hello this is a test</pre><br>
-<pre>svool gsrh rh z gvhg</pre>
+<pre>Enter e to encode/decode text, or f for frequency analysis: </pre>
 </div>
 
+### Step 4
+
+Type `e` and press enter to encode your message.
+
+
+<div class="c-project-output">
+<pre>Running your message through the cypher…
+gsrh rh olmtvi gvcg</pre>
+</div>

@@ -1,3 +1,4 @@
 name: "Codebreaker"
 identifier: "editor-codebreaker-starter"
 type: 'python'
+build: true

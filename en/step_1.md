@@ -1,21 +1,45 @@
-<h2 class="c-project-heading--task">What you will make</h2>
---- task ---
+<h2 class="c-project-heading--task">Reverse text</h2>
+### Step 1
 
-Turn a message into a secret message, then use a graph to work out how to read it.
+Print the alphabet and then reverse it.
 
---- /task ---
 
-In this project you will encode or decode a secret message from a `.txt` file. 
+### Step 2
 
-You can then display the letter frequency in a bar chart, which shows how often each letter appears in the secret message.
+Add the Python code below to create `alphabet` and `backwards`.
+
+The code uses `[::-1]` to reverse the text.
+
+
+<div class="c-project-code">
+--- code ---
+---
+language: python
+filename: main.py
+line_numbers: true
+line_number_start: 1
+line_highlights: 4-6
+---
+from pygal import Bar
+from frequency import english
+
+alphabet = ' abcdefghijklmnopqrstuvwxyz '
+backwards = alphabet[::-1]
+print(alphabet) # print to check that it works
+--- /code ---
+</div>
+### Step 3
+
+**Test:** Run the code. You should see the alphabet printed.  
+Try printing **backwards** to see it in reverse.
+
 
 <div class="c-project-output">
-<iframe src="https://editor.raspberrypi.org/en/embed/viewer/editor-codebreaker-example" width="600" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen>
-</iframe>
+abcdefghijklmnopqrstuvwxyz
 </div>
 
---- task ---
+<div class="c-project-callout c-project-callout--tip">
 
-Click **run** to explore the finished project.
-
---- /task ---
+### Tip
+Two libraries are already imported into your project: `pygal` and `frequency`. You can see them at the top of your code.
+</div>

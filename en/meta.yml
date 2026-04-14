@@ -9,23 +9,20 @@ version: 4
 listed: false
 copyedit: false
 last_tested: "2021-03-26"
+landing: true
 steps:
-  - title: Step 1
-  - title: Step 2
-  - title: Step 3
-  - title: Step 4
-  - title: Step 5
-  - title: Step 6
-  - title: Step 7
-  - title: Step 8
-  - title: Step 9
-  - title: Step 10
-    knowledge_quiz:
-      path: quiz1
-      version: 1
-      questions: 3
-      passing_score: 3
+  - title: Reverse text
+  - title: Create a dictionary
+    completion:
+      - engaged
+  - title: Make a secret code
+  - title: Encode text from a file
+  - title: Get user input
+  - title: Create a frequency analyser
+    completion:
+      - internal
+  - title: Create a chart
     completion:
       - external
-      - internal
-      - engaged
+  - title: Challenge
+    challenge: true

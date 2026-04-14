@@ -1,15 +1,13 @@
-<h2 class="c-project-heading--task">Create a dictionary</h2>
---- task ---
+<h2 class="c-project-heading--task">Make a secret code</h2>
+### Step 1
 
-Create a dictionary that maps each letter in `alphabet` to the matching letter in `backwards`.
+Use a function to turn text into a secret message.
 
---- /task ---
 
---- task ---
+### Step 2
 
-Add the code below and check that it works in the **Text output** tab.
+Under the the `print(code)` line, add the code below. 
 
---- /task ---
 
 <div class="c-project-code">
 --- code ---
@@ -17,28 +15,43 @@ Add the code below and check that it works in the **Text output** tab.
 language: python
 filename: main.py
 line_numbers: true
-line_number_start: 1
-line_highlights: 8-9
+line_number_start: 8
+line_highlights: 11-22
 ---
-from pygal import Bar
-from frequency import english
-
-alphabet = ' abcdefghijklmnopqrstuvwxyz '
-backwards = alphabet[::-1]
-print(alphabet) # print to check that it works
-
 code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dictionary to map the letters
 print(code) # print to check that it works
+
+# create the atbash function
+def atbash(text):
+    text = text.lower() # make lower case
+    output = '' # Store secret message
+
+    for letter in text:
+        if letter in code:
+            output += code[letter] # Swap each letter
+
+    return output
+
+print(atbash('hello world'))
 --- /code ---
 </div>
---- task ---
+### Step 3
 
-**Test:** Run your code. You should see that the alphabet is reversed.  
+**Test:** Run your code. You should see that `'hello world'` has been encoded.
 
-For example, **a** matches **z**, and **b** matches **y**.
-
---- /task ---
 
 <div class="c-project-output">
-<pre>{' ': ' ', 'a': 'z', 'b': 'y', 'c': 'x', 'd': 'w', 'e': 'v', 'f': 'u', 'g': 't', 'h': 's', 'i': 'r', 'j': 'q', 'k': 'p', 'l': 'o', 'm': 'n', 'n': 'm', 'o': 'l', 'p': 'k', 'q': 'j', 'r': 'i', 's': 'h', 't': 'g', 'u': 'f', 'v': 'e', 'w': 'd', 'x': 'c', 'y': 'b', 'z': 'a'}</pre>
+<pre>svool dliow</pre>
+</div>
+
+### Step 4
+
+Try changing `'hello world'` to a different message. Make sure you use `'` around the text.
+
+
+<div class="c-project-callout c-project-callout--tip">
+
+### What is Atbash?
+- Atbash makes the secret code.
+- It uese the swapped letters from the dictionary to create new words
 </div>
