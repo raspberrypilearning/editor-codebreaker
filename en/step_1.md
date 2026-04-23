@@ -1,11 +1,8 @@
 <h2 class="c-project-heading--task">Reverse text</h2>
 
-### Step 1
-
 Print the alphabet and then reverse it.
 
-
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Add the Python code below to create `alphabet` and `backwards`.
 
@@ -29,9 +26,11 @@ backwards = alphabet[::-1]
 print(alphabet) # print to check that it works
 --- /code ---
 </div>
-### Step 3
 
-**Test:** Run the code. You should see the alphabet printed.  
+## Now run your code
+
+You should see the alphabet printed.
+
 Try printing **backwards** to see it in reverse.
 
 
@@ -39,8 +38,10 @@ Try printing **backwards** to see it in reverse.
 abcdefghijklmnopqrstuvwxyz
 </div>
 
+### Tip
 <div class="c-project-callout c-project-callout--tip">
 
-### Tip
 Two libraries are already imported into your project: `pygal` and `frequency`. You can see them at the top of your code.
 </div>
+
+Confirm the observable result.

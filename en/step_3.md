@@ -1,11 +1,8 @@
 <h2 class="c-project-heading--task">Make a secret code</h2>
 
-### Step 1
-
 Use a function to turn text into a secret message.
 
-
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Under the the `print(code)` line, add the code below. 
 
@@ -36,23 +33,24 @@ def atbash(text):
 print(atbash('hello world'))
 --- /code ---
 </div>
-### Step 3
 
-**Test:** Run your code. You should see that `'hello world'` has been encoded.
+## Now run your code
+
+You should see that `'hello world'` has been encoded.
 
 
 <div class="c-project-output">
 <pre>svool dliow</pre>
 </div>
 
-### Step 4
-
 Try changing `'hello world'` to a different message. Make sure you use `'` around the text.
 
 
+### What is Atbash?
 <div class="c-project-callout c-project-callout--tip">
 
-### What is Atbash?
 - Atbash makes the secret code.
 - It uese the swapped letters from the dictionary to create new words
 </div>
+
+Confirm the observable result.

@@ -1,11 +1,8 @@
 <h2 class="c-project-heading--task">Create a chart</h2>
 
-### Step 1
-
 Make a bar chart to show the letter frequency
 
-
-### Step 2
+<h2 class="c-project-heading--explainer">Follow these instructions</h2>
 
 Add the code under the `frequency` function. 
 
@@ -50,15 +47,15 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
         make_chart(message_freq, lang_freq)  # Call the function to make a chart        
 --- /code ---
 </div>
-### Step 3
 
-**Test:** Run your code to see the user prompt. 
+## Now run your code
+
+You should see the user prompt.
 
 <div class="c-project-output">
 <pre>Enter e to encode/decode text, or f for frequency analysis: </pre>
 </div>
 
-### Step 4
 Type `f` and press Enter.  
 Switch to the **Visual output** tab to see the chart.
 
@@ -68,10 +65,12 @@ Switch to the **Visual output** tab to see the chart.
 </div>
 
 
-<div class="c-project-callout c-project-callout--tip">
-
 ### Tip
 
-To see a different chart, edit the text in `input.txt` and run your code again.
+<div class="c-project-callout c-project-callout--tip">
 
-</tip>
+To see a different chart, edit the text in `input.txt` and rerun.
+
+</div>
+
+Confirm the observable result.
