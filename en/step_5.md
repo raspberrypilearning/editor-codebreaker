@@ -68,4 +68,4 @@ Type `e` and press enter to encode your message.
 gsrh rh olmtvi gvcg</pre>
 </div>
 
-Confirm the observable result.
+Run your code, type `e`, and check that the encoded message from `input.txt` is printed.

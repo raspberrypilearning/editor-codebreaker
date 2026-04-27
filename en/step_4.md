@@ -49,4 +49,4 @@ The second line is the encoded message.
 <pre>svool gsrh rh z gvhg</pre>
 </div>
 
-Confirm the observable result.
+Run your code and check that the first line shows the text from `input.txt` and the second line shows the encoded message.

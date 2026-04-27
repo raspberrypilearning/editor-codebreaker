@@ -53,4 +53,4 @@ Try changing `'hello world'` to a different message. Make sure you use `'` aroun
 - It uese the swapped letters from the dictionary to create new words
 </div>
 
-Confirm the observable result.
+Run your code and check that `hello world` is encoded as `svool dliow`.

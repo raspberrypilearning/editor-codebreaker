@@ -73,4 +73,4 @@ To see a different chart, edit the text in `input.txt` and rerun.
 
 </div>
 
-Confirm the observable result.
+Run your code, type `f`, switch to **Visual output**, and check that a bar chart compares the letter frequencies in English with the encoded message.

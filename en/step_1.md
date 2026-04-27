@@ -44,4 +44,4 @@ abcdefghijklmnopqrstuvwxyz
 Two libraries are already imported into your project: `pygal` and `frequency`. You can see them at the top of your code.
 </div>
 
-Confirm the observable result.
+Run your code and check that the alphabet is printed in the output.

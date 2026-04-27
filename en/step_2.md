@@ -39,4 +39,4 @@ For example, **a** matches **z**, and **b** matches **y**.
 <pre>{' ': ' ', 'a': 'z', 'b': 'y', 'c': 'x', 'd': 'w', 'e': 'v', 'f': 'u', 'g': 't', 'h': 's', 'i': 'r', 'j': 'q', 'k': 'p', 'l': 'o', 'm': 'n', 'n': 'm', 'o': 'l', 'p': 'k', 'q': 'j', 'r': 'i', 's': 'h', 't': 'g', 'u': 'f', 'v': 'e', 'w': 'd', 'x': 'c', 'y': 'b', 'z': 'a'}</pre>
 </div>
 
-Confirm the observable result.
+Run your code and check that the output shows a dictionary that matches each letter to its reversed partner, such as `a` to `z`.
