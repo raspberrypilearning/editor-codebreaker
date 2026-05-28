@@ -2,8 +2,6 @@
 
 Encode text from a file into a secret message using the **atbash** code.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Click the file icon in the project files window. Select **input.txt** to open it in a new tab.
 You can edit the file by typing into it, or you can leave it as it is.
 
