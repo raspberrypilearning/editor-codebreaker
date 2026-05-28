@@ -2,8 +2,6 @@
 
 Use a function to turn text into a secret message.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Under the the `print(code)` line, add the code below. 
 
 
