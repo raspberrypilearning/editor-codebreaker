@@ -2,8 +2,6 @@
 
 Print the alphabet and then reverse it.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Add the Python code below to create `alphabet` and `backwards`.
 
 The code uses `[::-1]` to reverse the text.
