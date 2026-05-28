@@ -2,8 +2,6 @@
 
 Create a dictionary that maps each letter in `alphabet` to the matching letter in `backwards`.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 Add the code below and check that it works in the **Text output** tab.
 
 
