@@ -2,8 +2,6 @@
 
 Write a function that works out how often each letter appears in your text.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
 ### Tip
 <div class="c-project-callout c-project-callout--tip">
 
@@ -46,7 +44,7 @@ choice = ''  # Start with a wrong answer for choice.
 ## Now run your code
 
 You should see a list of numbers. These numbers are the percentage of the message made up by each letter.
-Try editing the text in `input.txt` and rerun to see the percentage change.
+Try editing the text in `input.txt` and rerun to see the percentages change.
 
 
 <div class="c-project-output">
