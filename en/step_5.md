@@ -1,8 +1,6 @@
 <h2 class="c-project-heading--task">Get user input</h2>
 
-Asks your user to make choices about what they would like to do.
-
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+Ask your user to make choices about what they would like to do.
 
 If the user enters `e`, the message is encoded.
 
