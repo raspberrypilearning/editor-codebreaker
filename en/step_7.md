@@ -1,8 +1,6 @@
 <h2 class="c-project-heading--task">Create a chart</h2>
 
-Make a bar chart to show the letter frequency
-
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+Make a bar chart to show the letter frequency.
 
 Add the code under the `frequency` function. 
 
