@@ -6,7 +6,6 @@ Add the code under the `frequency` function.
 
 You also need to add `make chart` at the end so the chart is created.
 
-
 <div class="c-project-code">
 --- code ---
 ---
@@ -48,7 +47,7 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
 
 ## Now run your code
 
-You should see the user prompt.
+You should see the user prompt. 
 
 <div class="c-project-output">
 <pre>Enter e to encode/decode text, or f for frequency analysis: </pre>
@@ -71,4 +70,3 @@ To see a different chart, edit the text in `input.txt` and rerun.
 
 </div>
 
-Run your code, type `f`, switch to **Visual output**, and check that a bar chart compares the letter frequencies in English with the encoded message.

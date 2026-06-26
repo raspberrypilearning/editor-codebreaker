@@ -2,12 +2,7 @@
 
 Print the alphabet and then reverse it.
 
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
-
-Add the Python code below to create `alphabet` and `backwards`.
-
-The code uses `[::-1]` to reverse the text.
-
+Add the Python code below to create `alphabet` and `backwards`. The code uses `[::-1]` to reverse the text.
 
 <div class="c-project-code">
 --- code ---
@@ -29,7 +24,7 @@ print(alphabet) # print to check that it works
 
 ## Now run your code
 
-You should see the alphabet printed.
+You should see the alphabet printed in the output.
 
 Try printing **backwards** to see it in reverse.
 
@@ -44,4 +39,3 @@ abcdefghijklmnopqrstuvwxyz
 Two libraries are already imported into your project: `pygal` and `frequency`. You can see them at the top of your code.
 </div>
 
-Run your code and check that the alphabet is printed in the output.

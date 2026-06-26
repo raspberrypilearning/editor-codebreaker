@@ -12,4 +12,4 @@ If possible, swap your cyphertext with a partner and see if they can crack your 
 
 ## Now run your code
 
-Run your code and check that your updated cypher still turns text into a new secret message.
+Check that your updated cypher still turns text into a new secret message.
