@@ -2,7 +2,9 @@
 
 Print the alphabet and then reverse it.
 
-Add the Python code below to create `alphabet` and `backwards`. The code uses `[::-1]` to reverse the text.
+Add the Python code below to create `alphabet` and `backwards`.
+
+The code uses `[::-1]` to reverse the text.
 
 <div class="c-project-code">
 --- code ---
