@@ -2,12 +2,16 @@
 
 Encode text from a file into a secret message using the **atbash** code.
 
+## Step 1
+
 Click the file icon in the project files window. Select **input.txt** to open it in a new tab.
 You can edit the file by typing into it, or you can leave it as it is.
 
 <div class="c-project-output">
 ![screenshot of the project file tab with the input file open for editing](images/input-file.png)
 </div>
+
+## Step 2
 
 The code below reads the text from the file. Paste the code into your project, then print the text to check it works.
 
@@ -41,10 +45,8 @@ You should see two lines of output.
 The first line is the text from the file.
 The second line is the encoded message.
 
-
 <div class="c-project-output">
 <pre>hello this is a test</pre><br>
 <pre>svool gsrh rh z gvhg</pre>
 </div>
 
-Run your code and check that the first line shows the text from `input.txt` and the second line shows the encoded message.

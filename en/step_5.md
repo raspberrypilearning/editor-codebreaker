@@ -1,23 +1,12 @@
 <h2 class="c-project-heading--task">Get user input</h2>
 
-Asks your user to make choices about what they would like to do.
-
-<h2 class="c-project-heading--explainer">Follow these instructions</h2>
+Ask your user to make choices about what they would like to do.
 
 If the user enters `e`, the message is encoded.
 
-Paste the code below into your project.
-
-
-### Code explainer
-
-<div class="c-project-callout c-project-callout--tip">
-
-- This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.  
-- If the user enters `e`, the message is encoded. 
-- `f` is used later.
-
 </div>
+
+Paste the code below into your project.
 
 <div class="c-project-code">
 --- code ---
@@ -68,4 +57,10 @@ Type `e` and press enter to encode your message.
 gsrh rh olmtvi gvcg</pre>
 </div>
 
-Run your code, type `e`, and check that the encoded message from `input.txt` is printed.
+### Code explainer
+
+<div class="c-project-callout c-project-callout--tip">
+
+- This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.  
+- If the user enters `e`, the message is encoded. 
+- `f` is used later.

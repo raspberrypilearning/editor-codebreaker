@@ -4,7 +4,6 @@ Create a dictionary that maps each letter in `alphabet` to the matching letter i
 
 Add the code below and check that it works in the **Text output** tab.
 
-
 <div class="c-project-code">
 --- code ---
 ---
@@ -28,13 +27,9 @@ print(code) # print to check that it works
 
 ## Now run your code
 
-You should see that the alphabet is reversed.
-
-For example, **a** matches **z**, and **b** matches **y**.
-
+Check that the output shows a dictionary that matches each letter to its reversed partner. For example, **a** matches **z**, and **b** matches **y**.
 
 <div class="c-project-output">
 <pre>{' ': ' ', 'a': 'z', 'b': 'y', 'c': 'x', 'd': 'w', 'e': 'v', 'f': 'u', 'g': 't', 'h': 's', 'i': 'r', 'j': 'q', 'k': 'p', 'l': 'o', 'm': 'n', 'n': 'm', 'o': 'l', 'p': 'k', 'q': 'j', 'r': 'i', 's': 'h', 't': 'g', 'u': 'f', 'v': 'e', 'w': 'd', 'x': 'c', 'y': 'b', 'z': 'a'}</pre>
 </div>
 
-Run your code and check that the output shows a dictionary that matches each letter to its reversed partner, such as `a` to `z`.

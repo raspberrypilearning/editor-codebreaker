@@ -4,7 +4,6 @@ Use a function to turn text into a secret message.
 
 Under the the `print(code)` line, add the code below. 
 
-
 <div class="c-project-code">
 --- code ---
 ---
@@ -34,8 +33,7 @@ print(atbash('hello world'))
 
 ## Now run your code
 
-You should see that `'hello world'` has been encoded.
-
+Check that `hello world` is encoded as `svool dliow`.
 
 <div class="c-project-output">
 <pre>svool dliow</pre>
@@ -43,12 +41,11 @@ You should see that `'hello world'` has been encoded.
 
 Try changing `'hello world'` to a different message. Make sure you use `'` around the text.
 
-
 ### What is Atbash?
 <div class="c-project-callout c-project-callout--tip">
 
-- Atbash makes the secret code.
-- It uese the swapped letters from the dictionary to create new words
+- Atbash makes the secret code
+- It uses the swapped letters from the dictionary to create new words
 </div>
 
-Run your code and check that `hello world` is encoded as `svool dliow`.
+
