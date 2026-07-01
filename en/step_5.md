@@ -57,10 +57,9 @@ Type `e` and press enter to encode your message.
 gsrh rh olmtvi gvcg</pre>
 </div>
 
-### Code explainer
-
 <div class="c-project-callout c-project-callout--tip">
 
+### Code explainer
 - This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.  
 - If the user enters `e`, the message is encoded. 
 - `f` is used later.

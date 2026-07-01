@@ -41,8 +41,9 @@ Check that `hello world` is encoded as `svool dliow`.
 
 Try changing `'hello world'` to a different message. Make sure you use `'` around the text.
 
-### What is Atbash?
 <div class="c-project-callout c-project-callout--tip">
+
+### What is Atbash?
 
 - Atbash makes the secret code
 - It uses the swapped letters from the dictionary to create new words

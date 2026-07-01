@@ -62,9 +62,9 @@ Switch to the **Visual output** tab to see the chart.
 </div>
 
 
-### Tip
-
 <div class="c-project-callout c-project-callout--tip">
+
+### Tip
 
 To see a different chart, edit the text in `input.txt` and rerun.
 

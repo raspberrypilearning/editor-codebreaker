@@ -30,14 +30,15 @@ You should see the alphabet printed in the output.
 
 Try printing **backwards** to see it in reverse.
 
-
 <div class="c-project-output">
 abcdefghijklmnopqrstuvwxyz
 </div>
 
-### Tip
 <div class="c-project-callout c-project-callout--tip">
 
+### Tip
+
 Two libraries are already imported into your project: `pygal` and `frequency`. You can see them at the top of your code.
+
 </div>
 

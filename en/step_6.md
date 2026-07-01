@@ -2,8 +2,9 @@
 
 Write a function that works out how often each letter appears in your text.
 
-### Tip
 <div class="c-project-callout c-project-callout--tip">
+
+### Tip
 
 **Frequency analysis** counts how often something appears, so you can spot patterns in that data.
 </div>
