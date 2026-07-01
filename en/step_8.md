@@ -2,14 +2,10 @@
 
 Upgrade your project!
 
-## Step 1
+## Create a different cypher
 
 Change the starting letter of the alphabet to create a different cypher. You can do this by changing the original `alphabet` list.
 
-## Step 2
+## Swap your cyphertext 
 
 If possible, swap your cyphertext with a partner and see if they can crack your code using their frequency analyser.
-
-## Now run your code
-
-Check that your updated cypher still turns text into a new secret message.
