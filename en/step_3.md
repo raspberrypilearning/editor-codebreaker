@@ -34,7 +34,7 @@ Try changing `'hello world'` to a different message. Make sure you use `'` aroun
 
 > [!INFO]
 >
-> ### What is Atbash?
+> ## What is Atbash?
 >
 > - Atbash makes the secret code
 > - It uses the swapped letters from the dictionary to create new words

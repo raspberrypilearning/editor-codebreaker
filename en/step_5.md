@@ -46,7 +46,7 @@ gsrh rh olmtvi gvcg
 
 > [!INFO]
 >
-> ### Code explainer
+> ## Code explainer
 >
 > - This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.
 > - If the user enters `e`, the message is encoded.
