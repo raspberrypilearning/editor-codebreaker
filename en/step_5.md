@@ -1,22 +1,12 @@
-<h2 class="c-project-heading--task">Get user input</h2>
+## Get user input
 
 Ask your user to make choices about what they would like to do.
 
 If the user enters `e`, the message is encoded.
 
-</div>
-
 Paste the code below into your project.
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 32
-line_highlights: 34-50
----
+```python filename="main.py" line_numbers="true" line_number_start="32" line_highlights="34-50"
 print(atbash(get_text('input.txt'))) # print to check that it works
 
 # user input
@@ -37,29 +27,27 @@ while choice != 'e' and choice != 'f':  # Asking for the right answer
         message_freq = frequency(message)
         lang_freq = english  # Import the English frequency dictionary
 
---- /code ---
-</div>
+```
 
 ## Now run your code
 
 You should see a message asking for your choice.
 
+```
+Enter e to encode/decode text, or f for frequency analysis: 
+```
 
-<div class="c-project-output">
-<pre>Enter e to encode/decode text, or f for frequency analysis: </pre>
-</div>
+Type `e` and press Enter to encode your message.
 
-Type `e` and press enter to encode your message.
+```
+Running your message through the cypher…
+gsrh rh olmtvi gvcg
+```
 
-
-<div class="c-project-output">
-<pre>Running your message through the cypher…
-gsrh rh olmtvi gvcg</pre>
-</div>
-
-<div class="c-project-callout c-project-callout--tip">
-
-### Code explainer
-- This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.  
-- If the user enters `e`, the message is encoded. 
-- `f` is used later.
+> [!INFO]
+>
+> ### Code explainer
+>
+> - This uses `choice` in a loop. The loop runs until the user enters `e` or `f`.
+> - If the user enters `e`, the message is encoded.
+> - `f` is used later.

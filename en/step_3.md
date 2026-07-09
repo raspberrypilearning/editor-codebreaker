@@ -1,18 +1,10 @@
-<h2 class="c-project-heading--task">Make a secret code</h2>
+## Make a secret code
 
 Use a function to turn text into a secret message.
 
-Under the the `print(code)` line, add the code below. 
+Under the `print(code)` line, add the code below.
 
-<div class="c-project-code">
---- code ---
----
-language: python
-filename: main.py
-line_numbers: true
-line_number_start: 8
-line_highlights: 11-22
----
+```python filename="main.py" line_numbers="true" line_number_start="8" line_highlights="11-22"
 code = {alphabet[i]: backwards[i] for i in range(len(alphabet))} # Create a dictionary to map the letters
 print(code) # print to check that it works
 
@@ -28,25 +20,21 @@ def atbash(text):
     return output
 
 print(atbash('hello world'))
---- /code ---
-</div>
+```
 
 ## Now run your code
 
 Check that `hello world` is encoded as `svool dliow`.
 
-<div class="c-project-output">
-<pre>svool dliow</pre>
-</div>
+```
+svool dliow
+```
 
 Try changing `'hello world'` to a different message. Make sure you use `'` around the text.
 
-<div class="c-project-callout c-project-callout--tip">
-
-### What is Atbash?
-
-- Atbash makes the secret code
-- It uses the swapped letters from the dictionary to create new words
-</div>
-
-
+> [!INFO]
+>
+> ### What is Atbash?
+>
+> - Atbash makes the secret code
+> - It uses the swapped letters from the dictionary to create new words
