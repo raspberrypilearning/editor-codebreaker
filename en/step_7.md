@@ -4,7 +4,7 @@ Make a bar chart to show the letter frequency.
 
 Add the code under the `frequency` function.
 
-You also need to add `make chart` at the end so the chart is created.
+You also need to add `make_chart` at the end so the chart is created.
 
 ```python filename="main.py" line_numbers="true" line_number_start="44" line_highlights="46-51,70"
 print(frequency(get_text('input.txt'))) # print to check that it works
